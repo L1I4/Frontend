@@ -18,6 +18,10 @@
 		3120068F2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */; };
 		3195318C2A4C84AF00027BBA /* TicketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3195318B2A4C84AF00027BBA /* TicketStoryboard.storyboard */; };
 		3195318E2A4C875C00027BBA /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195318D2A4C875C00027BBA /* TicketViewController.swift */; };
+		319531912A4CAD5700027BBA /* ClubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319531902A4CAD5700027BBA /* ClubListViewController.swift */; };
+		319531932A4CAD6700027BBA /* ClubListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319531922A4CAD6700027BBA /* ClubListStoryboard.storyboard */; };
+		319531952A4CB03900027BBA /* ClubListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319531942A4CB03900027BBA /* ClubListTableViewCell.swift */; };
+		319531992A4CC39300027BBA /* ClubListCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319531982A4CC39300027BBA /* ClubListCellDelegate.swift */; };
 		4F7656E07EB4D738C94EBA44 /* Pods_CLIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59321E095691AE0CC1B18B5 /* Pods_CLIN.framework */; };
 		6DC3A54B1DCA0AB3D6B89FAA /* Pods_CLIN_CLINUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D656B91287D3F51500B5D4E2 /* Pods_CLIN_CLINUITests.framework */; };
 		DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FF32A4C7DD9000FEE95 /* MainViewController.swift */; };
@@ -60,6 +64,10 @@
 		3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLINUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3195318B2A4C84AF00027BBA /* TicketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TicketStoryboard.storyboard; path = ../../../../../../TicketStoryboard.storyboard; sourceTree = "<group>"; };
 		3195318D2A4C875C00027BBA /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TicketViewController.swift; path = ../../../../../../Applications/TicketViewController.swift; sourceTree = "<group>"; };
+		319531902A4CAD5700027BBA /* ClubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClubListViewController.swift; path = ../../../../../../Applications/ClubListViewController.swift; sourceTree = "<group>"; };
+		319531922A4CAD6700027BBA /* ClubListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ClubListStoryboard.storyboard; path = ../../../../../../Applications/ClubListStoryboard.storyboard; sourceTree = "<group>"; };
+		319531942A4CB03900027BBA /* ClubListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClubListTableViewCell.swift; path = ../../../../../../Applications/ClubListTableViewCell.swift; sourceTree = "<group>"; };
+		319531982A4CC39300027BBA /* ClubListCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClubListCellDelegate.swift; path = ../../../../../../Applications/ClubListCellDelegate.swift; sourceTree = "<group>"; };
 		39EE6DCA617BD5E4BD4722FB /* Pods-CLIN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN.release.xcconfig"; path = "Target Support Files/Pods-CLIN/Pods-CLIN.release.xcconfig"; sourceTree = "<group>"; };
 		9384F4538234BDA9ECB24441 /* Pods-CLINTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLINTests.release.xcconfig"; path = "Target Support Files/Pods-CLINTests/Pods-CLINTests.release.xcconfig"; sourceTree = "<group>"; };
 		99DAB50961405F5B8F1AF19F /* Pods-CLIN-CLINUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN-CLINUITests.release.xcconfig"; path = "Target Support Files/Pods-CLIN-CLINUITests/Pods-CLIN-CLINUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +134,7 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
+				3195318F2A4CAD4100027BBA /* ClubList */,
 				DD450FF22A4C7DAE000FEE95 /* MainPage */,
 				319531882A4C847C00027BBA /* Ticket */,
 				3120066B2A4C6BE100B63270 /* AppDelegate.swift */,
@@ -163,6 +172,17 @@
 				3195318D2A4C875C00027BBA /* TicketViewController.swift */,
 			);
 			path = Ticket;
+			sourceTree = "<group>";
+		};
+		3195318F2A4CAD4100027BBA /* ClubList */ = {
+			isa = PBXGroup;
+			children = (
+				319531902A4CAD5700027BBA /* ClubListViewController.swift */,
+				319531922A4CAD6700027BBA /* ClubListStoryboard.storyboard */,
+				319531942A4CB03900027BBA /* ClubListTableViewCell.swift */,
+				319531982A4CC39300027BBA /* ClubListCellDelegate.swift */,
+			);
+			path = ClubList;
 			sourceTree = "<group>";
 		};
 		B38642EA46EA297244ADB580 /* Pods */ = {
@@ -311,6 +331,7 @@
 				312006782A4C6BE200B63270 /* LaunchScreen.storyboard in Resources */,
 				312006752A4C6BE200B63270 /* Assets.xcassets in Resources */,
 				312006732A4C6BE100B63270 /* Main.storyboard in Resources */,
+				319531932A4CAD6700027BBA /* ClubListStoryboard.storyboard in Resources */,
 				3195318C2A4C84AF00027BBA /* TicketStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,9 +461,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3195318E2A4C875C00027BBA /* TicketViewController.swift in Sources */,
+				319531952A4CB03900027BBA /* ClubListTableViewCell.swift in Sources */,
 				312006702A4C6BE100B63270 /* ViewController.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
+				319531912A4CAD5700027BBA /* ClubListViewController.swift in Sources */,
 				3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */,
+				319531992A4CC39300027BBA /* ClubListCellDelegate.swift in Sources */,
 				DD450FF82A4C95F5000FEE95 /* MainBeforeViewController.swift in Sources */,
 				DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */,
 			);
