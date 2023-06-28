@@ -12,28 +12,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var phoneNumberTextField: UITextField!
     
     @IBOutlet weak var nextToPwBtn: UIButton!
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
         textFieldInit()
         nextToBtnInit()
     }
+
+    @IBAction func nextToBtnTap(_ sender: Any) {
+        
+        let nextVC = self.storyboard?.instantiateViewController(identifier: "Password")
+        self.navigationController?.pushViewController(nextVC!, animated: true)
+        
+    }
     
-//    @IBAction func loginBtnTap(_ sender: Any) {
-//        // Login API 호출
-//
-//        // Login 화면 dismiss 후 Home 화면 이동
-//
-//    }
-//
+
 //    @IBAction func joinBtnTap(_ sender: Any) {
 //        // Join 화면 이동
 //    }
 
 }
 
+// For PhoneNumber VC
 extension ViewController{
     
     func textFieldInit(){
@@ -77,3 +78,5 @@ extension ViewController{
     
 
 }
+
+
