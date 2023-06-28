@@ -16,6 +16,8 @@
 		312006832A4C6BE200B63270 /* CLINTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312006822A4C6BE200B63270 /* CLINTests.swift */; };
 		3120068D2A4C6BE200B63270 /* CLINUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120068C2A4C6BE200B63270 /* CLINUITests.swift */; };
 		3120068F2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */; };
+		3195318C2A4C84AF00027BBA /* TicketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3195318B2A4C84AF00027BBA /* TicketStoryboard.storyboard */; };
+		3195318E2A4C875C00027BBA /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3195318D2A4C875C00027BBA /* TicketViewController.swift */; };
 		4F7656E07EB4D738C94EBA44 /* Pods_CLIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59321E095691AE0CC1B18B5 /* Pods_CLIN.framework */; };
 		6DC3A54B1DCA0AB3D6B89FAA /* Pods_CLIN_CLINUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D656B91287D3F51500B5D4E2 /* Pods_CLIN_CLINUITests.framework */; };
 		E682CA74605F2FC21599F9E3 /* Pods_CLINTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB443F0C5ED13C336067647 /* Pods_CLINTests.framework */; };
@@ -53,6 +55,8 @@
 		312006882A4C6BE200B63270 /* CLINUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLINUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120068C2A4C6BE200B63270 /* CLINUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLINUITests.swift; sourceTree = "<group>"; };
 		3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLINUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3195318B2A4C84AF00027BBA /* TicketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TicketStoryboard.storyboard; path = ../../../../../../TicketStoryboard.storyboard; sourceTree = "<group>"; };
+		3195318D2A4C875C00027BBA /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TicketViewController.swift; path = ../../../../../../Applications/TicketViewController.swift; sourceTree = "<group>"; };
 		39EE6DCA617BD5E4BD4722FB /* Pods-CLIN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN.release.xcconfig"; path = "Target Support Files/Pods-CLIN/Pods-CLIN.release.xcconfig"; sourceTree = "<group>"; };
 		9384F4538234BDA9ECB24441 /* Pods-CLINTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLINTests.release.xcconfig"; path = "Target Support Files/Pods-CLINTests/Pods-CLINTests.release.xcconfig"; sourceTree = "<group>"; };
 		99DAB50961405F5B8F1AF19F /* Pods-CLIN-CLINUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN-CLINUITests.release.xcconfig"; path = "Target Support Files/Pods-CLIN-CLINUITests/Pods-CLIN-CLINUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
+				319531882A4C847C00027BBA /* Ticket */,
 				3120066B2A4C6BE100B63270 /* AppDelegate.swift */,
 				3120066D2A4C6BE100B63270 /* SceneDelegate.swift */,
 				3120066F2A4C6BE100B63270 /* ViewController.swift */,
@@ -144,6 +149,15 @@
 			path = CLINUITests;
 			sourceTree = "<group>";
 		};
+		319531882A4C847C00027BBA /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				3195318B2A4C84AF00027BBA /* TicketStoryboard.storyboard */,
+				3195318D2A4C875C00027BBA /* TicketViewController.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
 		B38642EA46EA297244ADB580 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +168,6 @@
 				0F7A53586698F8036E9F11D1 /* Pods-CLINTests.debug.xcconfig */,
 				9384F4538234BDA9ECB24441 /* Pods-CLINTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +293,7 @@
 				312006782A4C6BE200B63270 /* LaunchScreen.storyboard in Resources */,
 				312006752A4C6BE200B63270 /* Assets.xcassets in Resources */,
 				312006732A4C6BE100B63270 /* Main.storyboard in Resources */,
+				3195318C2A4C84AF00027BBA /* TicketStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3195318E2A4C875C00027BBA /* TicketViewController.swift in Sources */,
 				312006702A4C6BE100B63270 /* ViewController.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
 				3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */,
