@@ -227,8 +227,11 @@
                                                                     <constraint firstAttribute="width" constant="20" id="UW4-Eb-fnW"/>
                                                                 </constraints>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                                                <state key="normal" image="non_check"/>
+                                                                <state key="selected" image="check"/>
+                                                                <connections>
+                                                                    <action selector="touchCheckCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jgT-f1-7Oe"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -257,8 +260,11 @@
                                                                     <constraint firstAttribute="width" constant="20" id="StA-tU-RVd"/>
                                                                 </constraints>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                                                <state key="normal" image="non_check"/>
+                                                                <state key="selected" image="check"/>
+                                                                <connections>
+                                                                    <action selector="touchCheckCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ROY-Yh-rh0"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -287,8 +293,11 @@
                                                                     <constraint firstAttribute="width" constant="20" id="IZn-zM-Y19"/>
                                                                 </constraints>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                                                <state key="normal" image="non_check"/>
+                                                                <state key="selected" image="check"/>
+                                                                <connections>
+                                                                    <action selector="touchCheckCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="q8O-9m-AOp"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -329,6 +338,9 @@
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="1번"/>
+                                                        <connections>
+                                                            <action selector="touchTableCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Zdn-W5-6OZ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1z-iX-Bsi">
                                                         <rect key="frame" x="108" y="13" width="50" height="30"/>
@@ -340,6 +352,9 @@
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="2번"/>
+                                                        <connections>
+                                                            <action selector="touchTableCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rGl-Nt-TyA"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVi-78-hbf">
                                                         <rect key="frame" x="177" y="13" width="50" height="30"/>
@@ -351,6 +366,9 @@
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="3번"/>
+                                                        <connections>
+                                                            <action selector="touchTableCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wKj-TW-Gy8"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9od-Ph-ZqJ">
                                                         <rect key="frame" x="246" y="13" width="50" height="30"/>
@@ -362,6 +380,9 @@
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="4번"/>
+                                                        <connections>
+                                                            <action selector="touchTableCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8Y3-PZ-jNx"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.93725490570000003" green="0.94509804249999996" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -641,9 +662,10 @@
         <image name="Marketing" width="122" height="122"/>
         <image name="Rectangle" width="284.33334350585938" height="283"/>
         <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <image name="check" width="20" height="20"/>
         <image name="clarity_talk-bubbles-solid_y" width="33" height="33"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="non_check" width="20" height="20"/>
         <image name="tabler_bell-filled" width="30" height="30"/>
         <image name="🍺" width="29" height="29.333333969116211"/>
         <image name="😁" width="29" height="29.333333969116211"/>
