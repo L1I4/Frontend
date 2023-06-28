@@ -9,47 +9,51 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var idTextField: UITextField!
-    
-    @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ID / PW 기본 스타일 지정
-        idTextField.layer.borderWidth = 0.5
-        idTextField.layer.cornerRadius = 5
-        idTextField.layer.borderColor = UIColor.red.cgColor
-        
-        pwTextField.layer.borderWidth = 0.5
-        pwTextField.layer.cornerRadius = 5
-        pwTextField.layer.borderColor = UIColor.red.cgColor
-        
-        // ID / PW 입력시 테두리 색 조정 타겟 추가
-        idTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)),
-            for: .editingChanged)
-        pwTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)),
-            for: .editingChanged)
-        
+        textFieldInit()
     }
     
-    // ID / PW 입력시 테두리 색 조정
+//    @IBAction func loginBtnTap(_ sender: Any) {
+//        // Login API 호출
+//
+//        // Login 화면 dismiss 후 Home 화면 이동
+//
+//    }
+//
+//    @IBAction func joinBtnTap(_ sender: Any) {
+//        // Join 화면 이동
+//    }
+
+}
+
+extension ViewController{
+    
+    func textFieldInit(){
+        // ID / PW 기본 스타일 지정
+        phoneNumberTextField.layer.cornerRadius = 10
+        phoneNumberTextField.layer.borderWidth = 1
+        phoneNumberTextField.layer.borderColor = UIColor.red.cgColor
+        phoneNumberTextField.addLeftPadding(amount: 20)
+        phoneNumberTextField.addTextSpacing(amount: 2)
+        
+        // 폰 번호 입력시 테두리 색 조정 타겟 추가
+        phoneNumberTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)),
+            for: .editingChanged)
+    }
+    
+    // 폰 번호 입력시 테두리 색 조정
     @objc func textFieldDidChange(textField: UITextField){
-        if textField.text == ""{
+        if textField.text!.count < 13{
             textField.layer.borderColor = UIColor.red.cgColor
         }else{
             textField.layer.borderColor = UIColor.blue.cgColor
         }
-    }
-
-    @IBAction func loginBtnTap(_ sender: Any) {
-        // Login API 호출
-        // Login 화면 dismiss 후 Home 화면 이동
+        textField.changePhoneNumberFormat()
     }
     
-    @IBAction func joinBtnTap(_ sender: Any) {
-        // Join 화면 이동
-    }
 
 }
-
