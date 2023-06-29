@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ad" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-o6-wUh">
-                                <rect key="frame" x="0.0" y="59" width="393" height="60"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="cF5-l7-gzu"/>
+                                    <constraint firstAttribute="height" constant="100" id="cF5-l7-gzu"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cZC-ax-3gl">
-                                <rect key="frame" x="15" y="129" width="363" height="640"/>
+                                <rect key="frame" x="15" y="169" width="363" height="600"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TicketTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketTableViewCell" rowHeight="525" id="rNl-NL-44W" customClass="TicketTableViewCell" customModule="CLIN" customModuleProvider="target">
@@ -118,6 +118,7 @@
                     <tabBarItem key="tabBarItem" title="나의 티켓" id="gOU-wP-mBa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="adHeight" destination="cF5-l7-gzu" id="680-8x-O86"/>
                         <outlet property="advertiseImg" destination="pfE-o6-wUh" id="lx2-Nd-hKS"/>
                         <outlet property="advertiseTopConstraint" destination="Ftu-uy-3Jc" id="86F-C9-YQH"/>
                         <outlet property="tableView" destination="cZC-ax-3gl" id="VaE-ZE-o80"/>

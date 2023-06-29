@@ -227,11 +227,8 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
-
 				2E7F257D2A4D73C200B91863 /* ViewManager */,
-
 				DD450FFE2A4D4DA3000FEE95 /* AlertPage */,
-
 				2E7F257C2A4D4BD200B91863 /* Login */,
 				3174493D2A4D18EF00029862 /* APIManager */,
 				3106F8282A4CDEE5008C9ACD /* Ticket */,
@@ -590,7 +587,6 @@
 				2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */,
 				2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
-
 				3155DD9F2A4D7E9B0031665D /* TicketCellDelegate.swift in Sources */,
 				DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */,
 				317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */,
