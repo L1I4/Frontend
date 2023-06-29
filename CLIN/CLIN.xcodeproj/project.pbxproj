@@ -14,6 +14,7 @@
 		2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */; };
 		2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */; };
 		2E7F257F2A4D741F00B91863 /* ViewManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F257E2A4D741F00B91863 /* ViewManager.storyboard */; };
+		2E9F85BB2A4DAB780082BC8B /* CertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F85BA2A4DAB780082BC8B /* CertificateViewController.swift */; };
 		2E9F85C12A4DAFCE0082BC8B /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F85C02A4DAFCE0082BC8B /* MyPage.storyboard */; };
 		3106F8202A4CDE75008C9ACD /* ClubListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3106F81F2A4CDE75008C9ACD /* ClubListStoryboard.storyboard */; };
 		3106F8232A4CDEB0008C9ACD /* ClubListCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */; };
@@ -81,6 +82,7 @@
 		2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPwViewController.swift; sourceTree = "<group>"; };
 		2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReenterPwViewController.swift; sourceTree = "<group>"; };
 		2E7F257E2A4D741F00B91863 /* ViewManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewManager.storyboard; sourceTree = "<group>"; };
+		2E9F85BA2A4DAB780082BC8B /* CertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateViewController.swift; sourceTree = "<group>"; };
 		2E9F85C02A4DAFCE0082BC8B /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		3106F81F2A4CDE75008C9ACD /* ClubListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClubListStoryboard.storyboard; sourceTree = "<group>"; };
 		3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListCellDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				312006712A4C6BE100B63270 /* Main.storyboard */,
 				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
 				2E7F25732A4CECF200B91863 /* JoinViewController.swift */,
+				2E9F85BA2A4DAB780082BC8B /* CertificateViewController.swift */,
 				3120066F2A4C6BE100B63270 /* ViewController.swift */,
 				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
 				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
@@ -591,6 +594,7 @@
 				2E7F25722A4CC61900B91863 /* PwViewController.swift in Sources */,
 				2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */,
 				317449412A4D20BE00029862 /* apiManager.swift in Sources */,
+				2E9F85BB2A4DAB780082BC8B /* CertificateViewController.swift in Sources */,
 				3155DD9D2A4D7E8D0031665D /* TicketViewController.swift in Sources */,
 				3106F8272A4CDEDB008C9ACD /* ClubListViewController.swift in Sources */,
 				3174494C2A4D46E700029862 /* TicketResponse.swift in Sources */,
