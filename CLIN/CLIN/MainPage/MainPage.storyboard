@@ -335,9 +335,10 @@
                                                             <constraint firstAttribute="width" constant="50" id="ddD-bq-U5E"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="1번"/>
+                                                        <state key="normal" title="1번">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="touchTableCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Zdn-W5-6OZ"/>
                                                         </connections>
@@ -346,13 +347,13 @@
                                                         <rect key="frame" x="108" y="13" width="50" height="30"/>
                                                         <color key="backgroundColor" red="0.84313726430000002" green="0.84313726430000002" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Grk-K2-00h"/>
                                                             <constraint firstAttribute="width" constant="50" id="yO7-Zo-nez"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="2번"/>
+                                                        <state key="normal" title="2번">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="touchTableCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rGl-Nt-TyA"/>
                                                         </connections>
@@ -361,13 +362,13 @@
                                                         <rect key="frame" x="177" y="13" width="50" height="30"/>
                                                         <color key="backgroundColor" red="0.84313726430000002" green="0.84313726430000002" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="12b-RH-eGy"/>
                                                             <constraint firstAttribute="width" constant="50" id="M4T-dv-CUc"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="3번"/>
+                                                        <state key="normal" title="3번">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="touchTableCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wKj-TW-Gy8"/>
                                                         </connections>
@@ -376,13 +377,13 @@
                                                         <rect key="frame" x="246" y="13" width="50" height="30"/>
                                                         <color key="backgroundColor" red="0.84313726430000002" green="0.84313726430000002" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="4S4-5x-3RO"/>
                                                             <constraint firstAttribute="width" constant="50" id="co1-xz-H7T"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="4번"/>
+                                                        <state key="normal" title="4번">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="touchTableCallBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8Y3-PZ-jNx"/>
                                                         </connections>

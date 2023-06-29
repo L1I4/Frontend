@@ -238,7 +238,8 @@ class MainViewController: UIViewController {
         tableTrue()
         sender.isSelected = true
         sender.backgroundColor = UIColor(red: 0.15, green: 0.57, blue: 0.34, alpha: 1)
-        sender.tintColor = UIColor.white
+        sender.tintColor = UIColor(red: 0.15, green: 0.57, blue: 0.34, alpha: 1)
+        sender.titleLabel?.textColor = UIColor.white
     }
     
     func checkTrue() {
@@ -261,22 +262,26 @@ class MainViewController: UIViewController {
         if tableCall1.isSelected == true {
             tableCall1.isSelected = false
             tableCall1.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-            tableCall1.tintColor = UIColor.black
+            tableCall1.tintColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall1.titleLabel?.textColor = UIColor.black
             tableCall = "테이블 1"
         } else if tableCall2.isSelected == true {
             tableCall2.isSelected = false
             tableCall2.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-            tableCall2.tintColor = UIColor.black
+            tableCall2.tintColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall2.titleLabel?.textColor = UIColor.black
             tableCall = "테이블 2"
         } else if tableCall3.isSelected == true{
             tableCall3.isSelected = false
             tableCall3.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-            tableCall3.tintColor = UIColor.black
+            tableCall3.tintColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall3.titleLabel?.textColor = UIColor.black
             tableCall = "테이블 3"
         } else {
             tableCall4.isSelected = false
             tableCall4.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-            tableCall4.tintColor = UIColor.black
+            tableCall4.tintColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall4.titleLabel?.textColor = UIColor.black
             tableCall = "테이블 4"
         }
     }
