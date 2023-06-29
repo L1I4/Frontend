@@ -49,6 +49,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 둥글게 둥글게
         clincallButton.layer.cornerRadius = 13
         smartTalkButton.layer.cornerRadius = 13
         emojiButton.layer.cornerRadius = 25
@@ -76,24 +77,29 @@ class MainViewController: UIViewController {
         tableCall4.layer.cornerRadius = 11
         lastclinCallButton.layer.cornerRadius = 13
         
+        // 그림자 추가
         shadowSetting(emojiButton)
         shadowSetting(foodButton)
         shadowSetting(drinkButton)
         
+        // 스마트톡 메뉴 숨기기
         if smartTalkButton.backgroundColor == UIColor.white {
             emojiButton.layer.isHidden = true
             foodButton.layer.isHidden = true
             drinkButton.layer.isHidden = true
         }
         
+        // 임의로 선택된 테이블 (색상변경)
         tableView3.backgroundColor = UIColor(red: 0.15, green: 0.56, blue: 0.34, alpha: 1)
         
+        // 텍스트 부분 글자 색 변경
         let attributedString = NSMutableAttributedString(string: clinCallLabel.text!)
         let range = (clinCallLabel.text! as NSString).range(of: "클린 콜")
         attributedString.addAttribute(.foregroundColor, value: UIColor(red: 0.15, green: 0.57, blue: 0.34, alpha: 1), range: range)
         clinCallLabel.attributedText = attributedString
     }
     
+    // 그림자 추가 함수
     func shadowSetting(_ btn: UIButton) {
         btn.layer.shadowColor = UIColor.black.cgColor
         btn.layer.masksToBounds = false
@@ -102,6 +108,7 @@ class MainViewController: UIViewController {
         btn.layer.shadowOpacity = 0.25
     }
     
+    // 스마트톡 눌렀을 때 함수
     @IBAction func touchSmartTalkButton(_ sender: UIButton) {
         if smartTalkButton.backgroundColor == UIColor.white {
             smartTalkButton.backgroundColor = UIColor(red: 1, green: 0.84, blue: 0, alpha: 1)
@@ -119,6 +126,7 @@ class MainViewController: UIViewController {
         
     }
     
+    // 클린콜 눌렀을 때 함수
     @IBAction func touchCleanCallButton(_ sender: UIButton) {
         if clincallButton.backgroundColor == UIColor.white {
             clincallButton.backgroundColor = UIColor(red: 0.03, green: 0.33, blue: 0.17, alpha: 1)
@@ -134,7 +142,48 @@ class MainViewController: UIViewController {
             UIView.animate(withDuration: 0.3, delay: 0, animations: {
                 self.view.layoutIfNeeded()
             }, completion: nil)
+            
+            // 여기에 초기화 구현......
         }
-        
     }
+    
+    // 클린콜 안에서 요청사항 고르기
+    @IBAction func touchCheckCallBtn(_ sender: UIButton) {
+        if checkCall1.isSelected == true {
+            checkCall1.isSelected = false
+            checkCall1.setImage(UIImage(named: "non_check"), for: .normal)
+        } else if checkCall2.isSelected == true {
+            checkCall2.isSelected = false
+            checkCall2.setImage(UIImage(named: "non_check"), for: .normal)
+        } else {
+            checkCall3.isSelected = false
+            checkCall3.setImage(UIImage(named: "non_check"), for: .normal)
+        }
+        sender.isSelected = true
+    }
+    
+    // 클린콜 안에서 내 위치를 테이블 위치로 알려줄 때
+    @IBAction func touchTableCallBtn(_ sender: UIButton) {
+        if tableCall1.isSelected == true {
+            tableCall1.isSelected = false
+            tableCall1.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall1.tintColor = UIColor.black
+        } else if tableCall2.isSelected == true {
+            tableCall2.isSelected = false
+            tableCall2.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall2.tintColor = UIColor.black
+        } else if tableCall3.isSelected == true{
+            tableCall3.isSelected = false
+            tableCall3.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall3.tintColor = UIColor.black
+        } else {
+            tableCall4.isSelected = false
+            tableCall4.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall4.tintColor = UIColor.black
+        }
+        sender.isSelected = true
+        sender.backgroundColor = UIColor(red: 0.15, green: 0.57, blue: 0.34, alpha: 1)
+        sender.tintColor = UIColor.white
+    }
+    
 }
