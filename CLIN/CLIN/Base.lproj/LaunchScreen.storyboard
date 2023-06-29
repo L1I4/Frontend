@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,20 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splash Image 들어갈 자리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f46-cG-9nU">
-                                <rect key="frame" x="104" y="416" width="185" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="pQZ-qZ-BwS">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="f46-cG-9nU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="357" id="EIz-2S-zuo"/>
-                            <constraint firstItem="f46-cG-9nU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="UrL-5U-4rt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f46-cG-9nU" secondAttribute="bottom" constant="381" id="V8M-sP-oMW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f46-cG-9nU" secondAttribute="trailing" constant="104" id="ta9-uU-zTA"/>
+                            <constraint firstItem="pQZ-qZ-BwS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2FN-gt-Lfe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pQZ-qZ-BwS" secondAttribute="trailing" id="2ue-a5-0cx"/>
+                            <constraint firstItem="pQZ-qZ-BwS" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sqD-gR-L4q"/>
+                            <constraint firstAttribute="bottom" secondItem="pQZ-qZ-BwS" secondAttribute="bottom" id="v4G-2y-AGJ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +37,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="launchScreen" width="295" height="639.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

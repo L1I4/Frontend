@@ -12,12 +12,15 @@ class ClubListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var expandDataSource = ExpandingState()
+    @IBOutlet weak var settingBtn: UIButton!
     let cellSpacingHeight: CGFloat = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        settingBtn.setTitle("", for: .normal)
+        
         self.tableView.rowHeight = UITableView.automaticDimension
     }
     
