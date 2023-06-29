@@ -82,7 +82,7 @@ extension ViewController{
             nextToPwBtn.tintColor = UIColor.black
         }else{
             textField.layer.borderColor = UIColor.blue.cgColor
-            nextToPwBtn.layer.backgroundColor = UIColor.blue.cgColor
+            nextToPwBtn.layer.backgroundColor = UIColor(red: 72.0/255.0, green: 142.0/255.0, blue: 92.0/255.0, alpha: 1.0).cgColor
             nextToPwBtn.isEnabled = true
             nextToPwBtn.tintColor = UIColor.white
         }
