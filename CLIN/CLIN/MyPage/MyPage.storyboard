@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--마이페이지-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="MyPage" id="Y6W-OH-hqX" sceneMemberID="viewController">
@@ -32,6 +32,8 @@
                             <constraint firstItem="ER8-7a-GXe" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="gkI-Un-LEG"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="tab_mypage_selected" id="qnr-4m-SOd"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,6 +42,7 @@
     </scenes>
     <resources>
         <image name="MyPage" width="131" height="232.66667175292969"/>
+        <image name="tab_mypage_selected" width="23" height="25.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
