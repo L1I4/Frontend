@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Join View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Join" id="Y6W-OH-hqX" customClass="JoinViewController" customModule="CLIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +46,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="본인인증하기">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="certificationBtnTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qbx-Tb-FHS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -68,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="-274" y="7"/>
         </scene>
-        <!--View Controller-->
+        <!--Join View Controller-->
         <scene sceneID="8J5-N1-Uzi">
             <objects>
-                <viewController id="iKR-A0-ROg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Certification" id="iKR-A0-ROg" customClass="JoinViewController" customModule="CLIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0WZ-U3-6RU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +85,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmD-VF-GHK">
+                                <rect key="frame" x="168" y="493" width="57" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1LK-yR-hxD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="next"/>
+                                <connections>
+                                    <action selector="enterPwBtnTap:" destination="iKR-A0-ROg" eventType="touchUpInside" id="V5E-g9-Uy1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9q4-Fw-fiI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -89,6 +103,9 @@
                             <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="FHx-HS-GaR" secondAttribute="trailing" constant="133" id="0q9-ah-DdF"/>
                             <constraint firstItem="FHx-HS-GaR" firstAttribute="top" secondItem="9q4-Fw-fiI" secondAttribute="top" constant="357" id="ea4-yl-tqe"/>
                             <constraint firstItem="FHx-HS-GaR" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="133" id="nz5-2v-2Sa"/>
+                            <constraint firstItem="mmD-VF-GHK" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="168" id="oXe-Hb-0uH"/>
+                            <constraint firstItem="mmD-VF-GHK" firstAttribute="top" secondItem="FHx-HS-GaR" secondAttribute="bottom" constant="56" id="sEd-Gx-n8E"/>
+                            <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="mmD-VF-GHK" secondAttribute="trailing" constant="168" id="yuQ-f9-nIq"/>
                             <constraint firstItem="9q4-Fw-fiI" firstAttribute="bottom" secondItem="FHx-HS-GaR" secondAttribute="bottom" constant="381" id="zMZ-eP-RaJ"/>
                         </constraints>
                     </view>
@@ -97,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="676" y="6"/>
         </scene>
-        <!--View Controller-->
+        <!--Enter Pw View Controller-->
         <scene sceneID="SPK-GO-gSf">
             <objects>
-                <viewController id="2mC-aa-QV9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EnterPw" id="2mC-aa-QV9" customClass="EnterPwViewController" customModule="CLIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aoL-Ko-k1n">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,15 +225,23 @@
                             <constraint firstItem="Ohh-Qh-UO0" firstAttribute="top" secondItem="i3L-pF-Clx" secondAttribute="bottom" constant="70" id="mzN-VT-cCe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="pwCircles" destination="Icu-28-h1e" collectionClass="NSMutableArray" id="5be-gt-6Da"/>
+                        <outletCollection property="pwCircles" destination="aRU-Tw-Lut" collectionClass="NSMutableArray" id="IUi-st-evG"/>
+                        <outletCollection property="pwCircles" destination="9cl-dZ-fpk" collectionClass="NSMutableArray" id="0IL-t6-JQ3"/>
+                        <outletCollection property="pwCircles" destination="5ID-yb-VKi" collectionClass="NSMutableArray" id="Kfr-TB-uCu"/>
+                        <outletCollection property="pwCircles" destination="NeB-bA-Ngv" collectionClass="NSMutableArray" id="Osj-Ez-f7z"/>
+                        <outletCollection property="pwCircles" destination="S6j-wl-v57" collectionClass="NSMutableArray" id="0ww-QU-nfx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHC-wh-nqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="6"/>
+            <point key="canvasLocation" x="1641.9847328244275" y="5.6338028169014089"/>
         </scene>
-        <!--View Controller-->
+        <!--Reenter Pw View Controller-->
         <scene sceneID="QXN-dL-5ex">
             <objects>
-                <viewController id="y6P-yc-kkF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReenterPw" id="y6P-yc-kkF" customClass="ReenterPwViewController" customModule="CLIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wEv-6S-IDP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,6 +349,14 @@
                             <constraint firstItem="WtJ-Js-3w2" firstAttribute="top" secondItem="mPm-cC-jRk" secondAttribute="bottom" constant="70" id="uJ6-xp-t8J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="pwCircles" destination="Vho-sH-vwb" collectionClass="NSMutableArray" id="Awq-7p-9dy"/>
+                        <outletCollection property="pwCircles" destination="I6v-0Y-fqd" collectionClass="NSMutableArray" id="QZK-tQ-3P3"/>
+                        <outletCollection property="pwCircles" destination="OuH-Lj-B4j" collectionClass="NSMutableArray" id="x1n-Rk-QSB"/>
+                        <outletCollection property="pwCircles" destination="Jix-Mb-Jbe" collectionClass="NSMutableArray" id="slf-tC-HTp"/>
+                        <outletCollection property="pwCircles" destination="m5P-0t-vfK" collectionClass="NSMutableArray" id="ZQH-bW-Pd4"/>
+                        <outletCollection property="pwCircles" destination="OsC-ZV-pZK" collectionClass="NSMutableArray" id="De0-dM-8Ha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rw-sb-2Sw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

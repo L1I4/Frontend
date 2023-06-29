@@ -62,6 +62,15 @@
                                     <action selector="nextToBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LT9-UG-ij5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sl-vV-yuM">
+                                <rect key="frame" x="155" y="394" width="83" height="35"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
+                                <connections>
+                                    <action selector="joinBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dND-Qz-yKx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,9 +79,12 @@
                             <constraint firstItem="9A4-9o-9hn" firstAttribute="top" secondItem="0nU-Ts-lUb" secondAttribute="bottom" constant="36" id="6f0-ZN-wFU"/>
                             <constraint firstItem="a6Z-eG-Zoo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="I9z-7I-3CW"/>
                             <constraint firstItem="0nU-Ts-lUb" firstAttribute="top" secondItem="OmR-et-tFK" secondAttribute="bottom" constant="11" id="LIY-Gd-NgZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2sl-vV-yuM" secondAttribute="trailing" constant="155" id="Sa4-Bl-tLQ"/>
                             <constraint firstItem="9A4-9o-9hn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="SaV-hm-7QX"/>
                             <constraint firstItem="OmR-et-tFK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="UXE-b5-igz"/>
+                            <constraint firstItem="2sl-vV-yuM" firstAttribute="top" secondItem="9A4-9o-9hn" secondAttribute="bottom" constant="8" symbolic="YES" id="lVK-FX-rtt"/>
                             <constraint firstItem="a6Z-eG-Zoo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="lm7-KC-6cZ"/>
+                            <constraint firstItem="2sl-vV-yuM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="rDY-pl-NhW"/>
                             <constraint firstItem="OmR-et-tFK" firstAttribute="top" secondItem="a6Z-eG-Zoo" secondAttribute="bottom" constant="16" id="wN1-6M-rOr"/>
                         </constraints>
                     </view>

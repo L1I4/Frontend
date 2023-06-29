@@ -10,6 +10,9 @@
 		2E7F256E2A4C921F00B91863 /* Join.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F256D2A4C921F00B91863 /* Join.storyboard */; };
 		2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */; };
 		2E7F25722A4CC61900B91863 /* PwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25712A4CC61900B91863 /* PwViewController.swift */; };
+		2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25732A4CECF200B91863 /* JoinViewController.swift */; };
+		2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */; };
+		2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */; };
 		3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066B2A4C6BE100B63270 /* AppDelegate.swift */; };
 		3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066D2A4C6BE100B63270 /* SceneDelegate.swift */; };
 		312006702A4C6BE100B63270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066F2A4C6BE100B63270 /* ViewController.swift */; };
@@ -46,6 +49,9 @@
 		2E7F256D2A4C921F00B91863 /* Join.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Join.storyboard; sourceTree = "<group>"; };
 		2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTextField.swift; sourceTree = "<group>"; };
 		2E7F25712A4CC61900B91863 /* PwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwViewController.swift; sourceTree = "<group>"; };
+		2E7F25732A4CECF200B91863 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPwViewController.swift; sourceTree = "<group>"; };
+		2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReenterPwViewController.swift; sourceTree = "<group>"; };
 		312006682A4C6BE100B63270 /* CLIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120066B2A4C6BE100B63270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3120066D2A4C6BE100B63270 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,13 +128,16 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
+				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
+				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
+				2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */,
+				2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */,
+				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
 				3120066B2A4C6BE100B63270 /* AppDelegate.swift */,
 				3120066D2A4C6BE100B63270 /* SceneDelegate.swift */,
 				3120066F2A4C6BE100B63270 /* ViewController.swift */,
-				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
-				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
 				312006712A4C6BE100B63270 /* Main.storyboard */,
-				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
+				2E7F25732A4CECF200B91863 /* JoinViewController.swift */,
 				312006742A4C6BE200B63270 /* Assets.xcassets */,
 				312006762A4C6BE200B63270 /* LaunchScreen.storyboard */,
 				312006792A4C6BE200B63270 /* Info.plist */,
@@ -417,9 +426,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7F25722A4CC61900B91863 /* PwViewController.swift in Sources */,
+				2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */,
 				312006702A4C6BE100B63270 /* ViewController.swift in Sources */,
+				2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */,
 				2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
+				2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */,
 				3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

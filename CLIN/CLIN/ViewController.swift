@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         textFieldInit()
         nextToBtnInit()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print(self.navigationController?.viewControllers)
+    }
 
     @IBAction func nextToBtnTap(_ sender: Any) {
         
@@ -26,12 +30,16 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(nextVC!, animated: true)
         
     }
+
+    @IBAction func joinBtnTap(_ sender: Any) {
+            
+        let storyboard = UIStoryboard(name: "Join", bundle: nil)
+        let nextVC = storyboard.instantiateViewController(identifier: "Join")
+
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true)
+    }
     
-
-//    @IBAction func joinBtnTap(_ sender: Any) {
-//        // Join 화면 이동
-//    }
-
 }
 
 // For PhoneNumber VC
