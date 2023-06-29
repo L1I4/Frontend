@@ -10,6 +10,8 @@ import UIKit
 class EnterPwViewController: UIViewController {
     
     @IBOutlet var pwCircles: [UIView]!
+    var phoneNumber: String = "" // 입력 전화번호
+    var username: String = "" // 입력 이름
     
     let dummyTextField = UITextField()
         
@@ -18,6 +20,8 @@ class EnterPwViewController: UIViewController {
 
         pwCircleInit(pwCircles: pwCircles)
         pwInit()
+        
+        print(phoneNumber)
     }
     
 }
@@ -55,7 +59,11 @@ extension EnterPwViewController: UITextFieldDelegate{
         }else if newText.count == 6{
 
             if let nextVC = self.storyboard?.instantiateViewController(identifier: "ReenterPw") as? ReenterPwViewController {
-                nextVC.data = newText
+                
+                nextVC.username = username
+                nextVC.password = newText
+                nextVC.phoneNumber = phoneNumber
+                
                 nextVC.modalPresentationStyle = .fullScreen
                 self.present(nextVC, animated: true)
             }

@@ -16,34 +16,48 @@ class APIManager{
     static func signUp(param: Parameters, completion: @escaping (Result<BlankResponse, Error>) -> Void){
         let endpoint = APIConstant.signUp
         
-        AF.request(endpoint, method: .post, parameters: param, encoding: JSONEncoding.default).responseDecodable(of: BlankResponse.self, completionHandler: {
-            response in
-               switch response.result{
-               case .success(let res):
-                   print("회원 가입 요청 성공")
-                   completion(.success(res))
-               case .failure(_):
-                   print("회원 가입 요청 실패")
-                   //completion(.failure(error))
-               }
-        })
+        AF.request(endpoint,
+                   method: .post,
+                   parameters: param,
+                   encoding: JSONEncoding.default)
+        .response{ response in
+            if let status = response.response?.statusCode {
+                if status == 200{
+                    print("회원가입 요청 성공 (응답코드 \(status))")
+                }else{
+                    print("회원가입 요청 실패")
+                }
+            }
+        }
+        
     }
     
     //로그인 요청
     static func login(param: Parameters, completion: @escaping (Result<LoginResponse, Error>) -> Void){
         let endpoint = APIConstant.login
         
-        AF.request(endpoint, method: .post, parameters: param, encoding: JSONEncoding.default).responseDecodable(of: LoginResponse.self, completionHandler: { response in
-            switch response.result{
+        AF.request(endpoint, method: .post, parameters: param, encoding: JSONEncoding.default).responseDecodable(of: LoginResponse.self){
+            response in
+            switch response.result {
             case .success(let res):
                 print("로그인 요청 성공")
-                //completion에서 userId userDefault에 저장해야함!!!!
                 completion(.success(res))
-            case .failure(_):
+            case .failure(let error):
                 print("로그인 요청 실패")
-                //completion(.failure(error))
+                completion(.failure(error))
             }
-        })
+        }
+//    completionHandler: { response in
+//            switch response.result{
+//            case .success(let res):
+//                print("로그인 요청 성공")
+//                //completion에서 userId userDefault에 저장해야함!!!!
+//                completion(.success(res))
+//            case .failure(_):
+//                print("로그인 요청 실패")
+//                //completion(.failure(error))
+//            }
+//        })
     }
     
     //전체 클럽 리스트 조회 요청

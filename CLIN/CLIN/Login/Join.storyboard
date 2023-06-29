@@ -97,23 +97,43 @@
                                     <action selector="enterPwBtnTap:" destination="iKR-A0-ROg" eventType="touchUpInside" id="V5E-g9-Uy1"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W55-XW-UI6">
+                                <rect key="frame" x="50" y="311" width="297" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDZ-89-Eqk">
+                                <rect key="frame" x="50" y="249" width="297" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9q4-Fw-fiI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="FHx-HS-GaR" secondAttribute="trailing" constant="133" id="0q9-ah-DdF"/>
-                            <constraint firstItem="FHx-HS-GaR" firstAttribute="top" secondItem="9q4-Fw-fiI" secondAttribute="top" constant="357" id="ea4-yl-tqe"/>
+                            <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="W55-XW-UI6" secondAttribute="trailing" constant="46" id="4sR-hK-Auv"/>
+                            <constraint firstItem="FHx-HS-GaR" firstAttribute="top" secondItem="W55-XW-UI6" secondAttribute="bottom" constant="71" id="5Uw-GT-MCV"/>
+                            <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="kDZ-89-Eqk" secondAttribute="trailing" constant="46" id="93L-2i-zkr"/>
+                            <constraint firstItem="kDZ-89-Eqk" firstAttribute="top" secondItem="9q4-Fw-fiI" secondAttribute="top" constant="190" id="nLV-TZ-olz"/>
                             <constraint firstItem="FHx-HS-GaR" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="133" id="nz5-2v-2Sa"/>
                             <constraint firstItem="mmD-VF-GHK" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="168" id="oXe-Hb-0uH"/>
                             <constraint firstItem="mmD-VF-GHK" firstAttribute="top" secondItem="FHx-HS-GaR" secondAttribute="bottom" constant="56" id="sEd-Gx-n8E"/>
+                            <constraint firstItem="kDZ-89-Eqk" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="50" id="uzb-BN-NHj"/>
+                            <constraint firstItem="W55-XW-UI6" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="50" id="wHM-hv-6ZQ"/>
+                            <constraint firstItem="W55-XW-UI6" firstAttribute="top" secondItem="kDZ-89-Eqk" secondAttribute="bottom" constant="28" id="xsr-Th-98B"/>
                             <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="mmD-VF-GHK" secondAttribute="trailing" constant="168" id="yuQ-f9-nIq"/>
                             <constraint firstItem="9q4-Fw-fiI" firstAttribute="bottom" secondItem="FHx-HS-GaR" secondAttribute="bottom" constant="381" id="zMZ-eP-RaJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="kDZ-89-Eqk" id="VzA-qI-p1M"/>
+                        <outlet property="phoneNumberTextField" destination="W55-XW-UI6" id="Wt5-ph-TMK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgF-el-LZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="6"/>
+            <point key="canvasLocation" x="674.04580152671758" y="5.6338028169014089"/>
         </scene>
         <!--Enter Pw View Controller-->
         <scene sceneID="SPK-GO-gSf">

@@ -14,6 +14,9 @@ class JoinViewController: UIViewController {
 
     }
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    
     
     @IBAction func certificationBtnTap(_ sender: Any) {
         
@@ -23,7 +26,9 @@ class JoinViewController: UIViewController {
     }
 
     @IBAction func enterPwBtnTap(_ sender: Any) {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "EnterPw")
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "EnterPw") as? EnterPwViewController
+        nextVC!.username = nameTextField.text!
+        nextVC!.phoneNumber = phoneNumberTextField.text!
         nextVC!.modalPresentationStyle = .fullScreen
         self.present(nextVC!, animated: true)
     }
