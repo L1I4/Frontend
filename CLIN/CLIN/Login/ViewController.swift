@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         
         textFieldInit()
         nextToBtnInit()
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
