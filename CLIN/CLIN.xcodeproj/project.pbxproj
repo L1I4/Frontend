@@ -45,6 +45,11 @@
 		DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FF32A4C7DD9000FEE95 /* MainViewController.swift */; };
 		DD450FF62A4C7DEE000FEE95 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD450FF52A4C7DEE000FEE95 /* MainPage.storyboard */; };
 		DD450FF82A4C95F5000FEE95 /* MainBeforeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FF72A4C95F5000FEE95 /* MainBeforeViewController.swift */; };
+		DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FFF2A4D4DF3000FEE95 /* CustomAlertViewController.swift */; };
+		DD4510022A4D4EB8000FEE95 /* CustomAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */; };
+		DD4510042A4D5984000FEE95 /* CustomAlertFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4510032A4D5984000FEE95 /* CustomAlertFireViewController.swift */; };
+		DD9D0BC32A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D0BC22A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift */; };
+		DD9D0BC52A4D6BBA000FE6CC /* CustomAlertOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D0BC42A4D6BBA000FE6CC /* CustomAlertOutViewController.swift */; };
 		E682CA74605F2FC21599F9E3 /* Pods_CLINTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB443F0C5ED13C336067647 /* Pods_CLINTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +118,11 @@
 		DD450FF32A4C7DD9000FEE95 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD450FF52A4C7DEE000FEE95 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		DD450FF72A4C95F5000FEE95 /* MainBeforeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBeforeViewController.swift; sourceTree = "<group>"; };
+		DD450FFF2A4D4DF3000FEE95 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlert.storyboard; sourceTree = "<group>"; };
+		DD4510032A4D5984000FEE95 /* CustomAlertFireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertFireViewController.swift; sourceTree = "<group>"; };
+		DD9D0BC22A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertPeopleViewController.swift; sourceTree = "<group>"; };
+		DD9D0BC42A4D6BBA000FE6CC /* CustomAlertOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertOutViewController.swift; sourceTree = "<group>"; };
 		E59321E095691AE0CC1B18B5 /* Pods_CLIN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLIN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0B625C2F39066BD06C09F /* Pods-CLIN-CLINUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN-CLINUITests.debug.xcconfig"; path = "Target Support Files/Pods-CLIN-CLINUITests/Pods-CLIN-CLINUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +155,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E7F257C2A4D4BD200B91863 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				312006712A4C6BE100B63270 /* Main.storyboard */,
+				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
+				2E7F25732A4CECF200B91863 /* JoinViewController.swift */,
+				3120066F2A4C6BE100B63270 /* ViewController.swift */,
+				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
+				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
+				2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */,
+				2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		3106F81E2A4CDDE9008C9ACD /* ClubList */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,20 +217,21 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
+
 				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
 				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
 				2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */,
 				2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */,
 				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
+
+				DD450FFE2A4D4DA3000FEE95 /* AlertPage */,
+				2E7F257C2A4D4BD200B91863 /* Login */,
 				3174493D2A4D18EF00029862 /* APIManager */,
 				3106F8282A4CDEE5008C9ACD /* Ticket */,
 				3106F81E2A4CDDE9008C9ACD /* ClubList */,
 				DD450FF22A4C7DAE000FEE95 /* MainPage */,
 				3120066B2A4C6BE100B63270 /* AppDelegate.swift */,
 				3120066D2A4C6BE100B63270 /* SceneDelegate.swift */,
-				3120066F2A4C6BE100B63270 /* ViewController.swift */,
-				312006712A4C6BE100B63270 /* Main.storyboard */,
-				2E7F25732A4CECF200B91863 /* JoinViewController.swift */,
 				312006742A4C6BE200B63270 /* Assets.xcassets */,
 				312006762A4C6BE200B63270 /* LaunchScreen.storyboard */,
 				312006792A4C6BE200B63270 /* Info.plist */,
@@ -276,6 +302,18 @@
 				DD450FF52A4C7DEE000FEE95 /* MainPage.storyboard */,
 			);
 			path = MainPage;
+			sourceTree = "<group>";
+		};
+		DD450FFE2A4D4DA3000FEE95 /* AlertPage */ = {
+			isa = PBXGroup;
+			children = (
+				DD450FFF2A4D4DF3000FEE95 /* CustomAlertViewController.swift */,
+				DD4510032A4D5984000FEE95 /* CustomAlertFireViewController.swift */,
+				DD9D0BC22A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift */,
+				DD9D0BC42A4D6BBA000FE6CC /* CustomAlertOutViewController.swift */,
+				DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */,
+			);
+			path = AlertPage;
 			sourceTree = "<group>";
 		};
 		F0907840D1D11AF8D268A0CA /* Frameworks */ = {
@@ -398,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD450FF62A4C7DEE000FEE95 /* MainPage.storyboard in Resources */,
+				DD4510022A4D4EB8000FEE95 /* CustomAlert.storyboard in Resources */,
 				3106F82C2A4CDF1E008C9ACD /* TicketStoryboard.storyboard in Resources */,
 				312006782A4C6BE200B63270 /* LaunchScreen.storyboard in Resources */,
 				312006752A4C6BE200B63270 /* Assets.xcassets in Resources */,
@@ -531,22 +570,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				DD9D0BC32A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift in Sources */,
 				2E7F25722A4CC61900B91863 /* PwViewController.swift in Sources */,
 				2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */,
 				317449412A4D20BE00029862 /* apiManager.swift in Sources */,
 				3106F8272A4CDEDB008C9ACD /* ClubListViewController.swift in Sources */,
 				3174494C2A4D46E700029862 /* TicketResponse.swift in Sources */,
 				312006702A4C6BE100B63270 /* ViewController.swift in Sources */,
+				DD9D0BC52A4D6BBA000FE6CC /* CustomAlertOutViewController.swift in Sources */,
 				2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */,
 				2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */,
 				317449562A4D504D00029862 /* TicketViewController.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
+
+				DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */,
 				317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */,
 				2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */,
 				3106F8232A4CDEB0008C9ACD /* ClubListCellDelegate.swift in Sources */,
 				3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */,
 				317449472A4D3F0A00029862 /* LoginResponse.swift in Sources */,
 				DD450FF82A4C95F5000FEE95 /* MainBeforeViewController.swift in Sources */,
+				DD4510042A4D5984000FEE95 /* CustomAlertFireViewController.swift in Sources */,
 				DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */,
 				3106F8252A4CDECE008C9ACD /* ClubListTableViewCell.swift in Sources */,
 				317449452A4D393B00029862 /* BlankResponse.swift in Sources */,
