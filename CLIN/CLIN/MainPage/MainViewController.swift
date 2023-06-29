@@ -55,9 +55,10 @@ class MainViewController: UIViewController {
         super.viewDidAppear(animated)
         print(1)
         // 로그인 대상자가 아니면
-//        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "MainBeforeViewController")
-//        vcName?.modalPresentationStyle = .fullScreen
-//        self.present(vcName!, animated: false, completion: nil)
+        //        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "MainBeforeViewController")
+        //        vcName?.modalPresentationStyle = .fullScreen
+        //        self.present(vcName!, animated: false, completion: nil)
+
     }
     
     
@@ -121,6 +122,34 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         startTimer()
+        
+        // 티켓 사용 여부 조건부 화면 띄우기
+        APIManager.readTicket(userId:  Int(UserDefaults.standard.string(forKey: "userID")!)!) { result in
+            print(result)
+            switch result{
+            case .success(let ticketList):
+                if ticketList.count == 0{
+                    // 그 화면 띄우고
+                   
+                    let storyboard = UIStoryboard(name: "MainPage", bundle: nil)
+                    let nextVC = storyboard.instantiateViewController(withIdentifier: "MainBeforeViewController")
+                    self.navigationController?.pushViewController(nextVC, animated: false)
+//                    nextVC.modalPresentationStyle = .fullScreen
+//                    self.present(nextVC, animated: false, completion: nil)
+                    self.navigationController?.navigationBar.isHidden = true
+//                    self.tabBarController?.tabBar.isHidden = false
+                    
+                }else{
+                    // 만약 토글 true 면, 테이블 띄우고
+                    
+                    
+                    // 토글 false 면, 그 화면
+                }
+            case .failure(let error):
+                print(error)
+            }
+            
+        }
     }
     override func viewWillDisappear(_ animated: Bool) {
            super.viewWillDisappear(animated)

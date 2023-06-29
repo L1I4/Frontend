@@ -78,6 +78,7 @@ extension PwViewController: UITextFieldDelegate{
                     print(response.type)
                     
                     UserDefaults.standard.set(response.userID, forKey: "userID")
+                    print("UserID is \(response.userID)")
                     UserDefaults.standard.set(response.type, forKey: "type")
                     UserDefaults.standard.set(response.clubJoined, forKey: "clubJoined")
                     UserDefaults.standard.set(response.joinedClubNo, forKey: "joinedClubNo")

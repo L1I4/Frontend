@@ -138,7 +138,7 @@ extension ClubListViewController: ClubListCellDelegate{
         let alert = UIAlertController(title: "", message: "\(cell.clubNameLabel.text!) 티켓을 구매하시겠습니까?", preferredStyle: .alert)
         let ok = UIAlertAction(title: "확인", style: .default){_ in
             var param: Parameters = [:]
-            param["userId"] = 1
+            param["userId"] = UserDefaults.standard.string(forKey: "userID")
             APIManager.buyTicket(clubId: cell.clubId!, param: param)
             let confirmAlert = UIAlertController(title: "", message: "\(cell.clubNameLabel.text!) 티켓 구매가 완료되었습니다.", preferredStyle: .alert)
             let confirm = UIAlertAction(title: "확인", style: .default)
