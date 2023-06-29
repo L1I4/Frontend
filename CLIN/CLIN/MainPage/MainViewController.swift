@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import UserNotifications
 
 class MainViewController: UIViewController {
+    
+    let notificationCenter = UNUserNotificationCenter.current()
+    
     
     @IBOutlet weak var clincallButton: UIButton!
     @IBOutlet weak var smartTalkButton: UIButton!
@@ -133,6 +137,20 @@ class MainViewController: UIViewController {
                 switch result{
                 case .success(let res):
                     if res.safety != "SAFE"{
+                        let content = UNMutableNotificationContent()
+                        content.sound = UNNotificationSound.defaultCritical
+                        content.title = "CLIN"
+                        content.body = "[긴급] 안전 알림을 확인해주세요!"
+                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
+                        let request = UNNotificationRequest(identifier: "LocalNotification", content: content, trigger: trigger)
+                        
+                        UNUserNotificationCenter.current().add(request) { error in
+                            if let error = error {
+                                print("알람 에러: \(error.localizedDescription)")
+                            } else {
+                                print("알람 예약 완료=")
+                            }
+                        }
                         print("sdfdsfsdfsdfsdf\(res.option)")
                     
                         if res.option == 1{
@@ -169,6 +187,44 @@ class MainViewController: UIViewController {
             timer = nil
         }
 
+    
+//    func setAlarm(){
+//            userNotificationCentor.removeAllPendingNotificationRequests()
+//            
+//            let setHour = globalVariable.shared.timeHour
+//            let setMinute = globalVariable.shared.timeMinute
+//            
+//            let notificationContent = UNMutableNotificationContent()
+//            notificationContent.sound = UNNotificationSound.default
+//            notificationContent.title = "한밭 과제"
+//            
+//            func sendNotification() {
+//                        
+//                        let trigger = UNCalendarNotificationTrigger(
+//                            dateMatching: Calendar.current.dateComponents([.month, .day, .hour, .minute], from: taskDate), repeats: false)
+//                        
+//                        let request = UNNotificationRequest(
+//                            identifier: UUID().uuidString,
+//                            content: notificationContent,
+//                            trigger: trigger
+//                )
+//
+//                userNotificationCentor.add(request) { (error) in
+//                    print(#function, error as Any)
+//                }
+//            }
+//            
+//            for i in 0..<globalVariable.shared.taskAlarm.count{
+//                
+//                let homework = globalVariable.shared.taskAlarm[i].split(separator: "$", omittingEmptySubsequences: true).map({(value) in Int(value)!})
+//                
+//                notificationContent.body = globalVariable.shared.taskAlarmName[i]
+//                self.taskDate = Calendar.current.date(from: DateComponents(month: homework[0], day: homework[1], hour: homework[2] - setHour, minute: homework[3] - setMinute))!
+//                sendNotification()
+//            }
+//        }
+//    
+    
     
     // 그림자 추가 함수
     func shadowSetting(_ btn: UIButton) {
