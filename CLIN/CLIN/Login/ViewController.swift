@@ -27,7 +27,11 @@ class ViewController: UIViewController {
 
     @IBAction func nextToBtnTap(_ sender: Any) {
         
-        let nextVC = self.storyboard?.instantiateViewController(identifier: "Password")
+        let nextVC = self.storyboard?.instantiateViewController(identifier: "Password") as? PwViewController
+        
+        // 삽입한 '-' 빼서 다음 화면에 전달
+        nextVC!.phoneNumber = phoneNumberTextField.text!.components(separatedBy: "-").joined()
+        
         self.navigationController?.pushViewController(nextVC!, animated: true)
         
     }

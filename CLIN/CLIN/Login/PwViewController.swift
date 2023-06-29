@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class PwViewController: UIViewController{
     
     @IBOutlet var pwCircles: [UIView]!
+    
+    var phoneNumber:String = ""
         
     let dummyTextField = UITextField()
 
@@ -54,7 +57,34 @@ extension PwViewController: UITextFieldDelegate{
             }
         }else if newText.count == 6{
             /// TODO Login API 호출
-            // 'newText' is inputed password
+            
+            let loinParam: Parameters = [
+                "phoneNumber": phoneNumber,
+                "password": newText
+            ]
+            
+            APIManager.login(param: loinParam, completion: { result in
+                switch result {
+                case .success(let response):
+                    // 로그인 요청 성공
+                    print("로그인 성공")
+
+
+
+                case .failure(let error):
+                    // 로그인 요청 실패
+                    print("로그인 실패: \(error)")
+                    
+                    // tabBarController 로 전환. 현재는 서버 문제로 실패시에 배치
+                    /// TODO 성공시로 옮기기
+                    let storyboard = UIStoryboard(name: "ViewManager", bundle: nil)
+                    let tabBarController = storyboard.instantiateViewController(withIdentifier: "start")
+                    
+                    tabBarController.modalPresentationStyle = .fullScreen
+                    self.present(tabBarController, animated: true)
+
+                }
+            })
             
             
         }
