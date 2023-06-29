@@ -1,5 +1,5 @@
 //
-//  CustomAlertFireViewController.swift
+//  CustomAlertOutViewController.swift
 //  CLIN
 //
 //  Created by Mjolnir on 2023/06/29.
@@ -7,10 +7,11 @@
 
 import UIKit
 
-class CustomAlertFireViewController: UIViewController {
+class CustomAlertOutViewController: UIViewController {
     @IBOutlet weak var opaqueView: UIView!
     @IBOutlet weak var alertView: UIView!
     
+    @IBOutlet weak var contentsLabel: UILabel!
     @IBOutlet weak var okButton: UIButton!
     
     override func viewDidLoad() {
@@ -18,6 +19,11 @@ class CustomAlertFireViewController: UIViewController {
         
         alertView.layer.cornerRadius = 31
         okButton.layer.cornerRadius = 19
+        
+        let attributedString = NSMutableAttributedString(string: contentsLabel.text!)
+        let range = (contentsLabel.text! as NSString).range(of: "정문 상황이 많이 혼잡")
+        attributedString.addAttribute(.foregroundColor, value: UIColor.red, range: range)
+        contentsLabel.attributedText = attributedString
     }
     
     @IBAction func touchOkButton(_ sender: UIButton) {
