@@ -130,6 +130,14 @@
 		2E7F257C2A4D4BD200B91863 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				312006712A4C6BE100B63270 /* Main.storyboard */,
+				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
+				2E7F25732A4CECF200B91863 /* JoinViewController.swift */,
+				3120066F2A4C6BE100B63270 /* ViewController.swift */,
+				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
+				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
+				2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */,
+				2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -180,20 +188,12 @@
 			isa = PBXGroup;
 			children = (
 				2E7F257C2A4D4BD200B91863 /* Login */,
-				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
-				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
-				2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */,
-				2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */,
-				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
 				3174493D2A4D18EF00029862 /* APIManager */,
 				3106F8282A4CDEE5008C9ACD /* Ticket */,
 				3106F81E2A4CDDE9008C9ACD /* ClubList */,
 				DD450FF22A4C7DAE000FEE95 /* MainPage */,
 				3120066B2A4C6BE100B63270 /* AppDelegate.swift */,
 				3120066D2A4C6BE100B63270 /* SceneDelegate.swift */,
-				3120066F2A4C6BE100B63270 /* ViewController.swift */,
-				312006712A4C6BE100B63270 /* Main.storyboard */,
-				2E7F25732A4CECF200B91863 /* JoinViewController.swift */,
 				312006742A4C6BE200B63270 /* Assets.xcassets */,
 				312006762A4C6BE200B63270 /* LaunchScreen.storyboard */,
 				312006792A4C6BE200B63270 /* Info.plist */,
