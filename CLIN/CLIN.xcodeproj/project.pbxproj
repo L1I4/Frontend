@@ -51,6 +51,9 @@
 		DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FFF2A4D4DF3000FEE95 /* CustomAlertViewController.swift */; };
 		DD4510022A4D4EB8000FEE95 /* CustomAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */; };
 		DD4510042A4D5984000FEE95 /* CustomAlertFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4510032A4D5984000FEE95 /* CustomAlertFireViewController.swift */; };
+		DD9437912A4E124A00A7F7BC /* CustomAlertTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9437902A4E124A00A7F7BC /* CustomAlertTicketViewController.swift */; };
+		DD9437932A4E140900A7F7BC /* CustomAlertPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9437922A4E140900A7F7BC /* CustomAlertPurchaseViewController.swift */; };
+		DD9437952A4E168600A7F7BC /* CustomAlertHappyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9437942A4E168600A7F7BC /* CustomAlertHappyViewController.swift */; };
 		DD9D0BC32A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D0BC22A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift */; };
 		DD9D0BC52A4D6BBA000FE6CC /* CustomAlertOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D0BC42A4D6BBA000FE6CC /* CustomAlertOutViewController.swift */; };
 		DD9D0BC82A4D719D000FE6CC /* adminMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9D0BC72A4D719D000FE6CC /* adminMainViewController.swift */; };
@@ -133,6 +136,9 @@
 		DD450FFF2A4D4DF3000FEE95 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlert.storyboard; sourceTree = "<group>"; };
 		DD4510032A4D5984000FEE95 /* CustomAlertFireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertFireViewController.swift; sourceTree = "<group>"; };
+		DD9437902A4E124A00A7F7BC /* CustomAlertTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertTicketViewController.swift; sourceTree = "<group>"; };
+		DD9437922A4E140900A7F7BC /* CustomAlertPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertPurchaseViewController.swift; sourceTree = "<group>"; };
+		DD9437942A4E168600A7F7BC /* CustomAlertHappyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertHappyViewController.swift; sourceTree = "<group>"; };
 		DD9D0BC22A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertPeopleViewController.swift; sourceTree = "<group>"; };
 		DD9D0BC42A4D6BBA000FE6CC /* CustomAlertOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertOutViewController.swift; sourceTree = "<group>"; };
 		DD9D0BC72A4D719D000FE6CC /* adminMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminMainViewController.swift; sourceTree = "<group>"; };
@@ -345,6 +351,9 @@
 				DD9D0BCD2A4D9EDF000FE6CC /* CustomAlertSuccessViewController.swift */,
 				DD9D0BCF2A4DB6DC000FE6CC /* CustomAlertCheckViewController.swift */,
 				DD9D0BD12A4DB6F6000FE6CC /* CustomAlertNoticeViewController.swift */,
+				DD9437902A4E124A00A7F7BC /* CustomAlertTicketViewController.swift */,
+				DD9437922A4E140900A7F7BC /* CustomAlertPurchaseViewController.swift */,
+				DD9437942A4E168600A7F7BC /* CustomAlertHappyViewController.swift */,
 				DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */,
 			);
 			path = AlertPage;
@@ -617,6 +626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9437912A4E124A00A7F7BC /* CustomAlertTicketViewController.swift in Sources */,
 				DD9D0BC32A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift in Sources */,
 				2E7F25722A4CC61900B91863 /* PwViewController.swift in Sources */,
 				2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */,
@@ -634,6 +644,7 @@
 				2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
 				3155DD9F2A4D7E9B0031665D /* TicketCellDelegate.swift in Sources */,
+				DD9437952A4E168600A7F7BC /* CustomAlertHappyViewController.swift in Sources */,
 				DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */,
 				317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */,
 				2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */,
@@ -652,8 +663,8 @@
 				3155DDA12A4D7EB20031665D /* TicketTableViewCell.swift in Sources */,
 				317449432A4D21C600029862 /* DataResponse.swift in Sources */,
 				3174494A2A4D42A000029862 /* ReadReportResponse.swift in Sources */,
-				3106F82A2A4CDEFF008C9ACD /* TicketViewController.swift in Sources */,
 				DD9D0BD02A4DB6DC000FE6CC /* CustomAlertCheckViewController.swift in Sources */,
+				DD9437932A4E140900A7F7BC /* CustomAlertPurchaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

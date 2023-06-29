@@ -75,6 +75,8 @@ class adminMainViewController: UIViewController {
         historyView.layer.cornerRadius = 32
         historyBoxView.layer.cornerRadius = 8
         
+        tableButton3.backgroundColor = UIColor(red: 0.62, green: 0, blue: 0, alpha: 1)
+        tableButton3.tintColor = UIColor.white
         tableButton4.backgroundColor = UIColor(red: 0.62, green: 0, blue: 0, alpha: 1)
         tableButton4.tintColor = UIColor.white
     }
