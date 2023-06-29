@@ -46,7 +46,6 @@ class MainViewController: UIViewController {
     
     var checkCall: String = ""
     var tableCall: String = ""
-    private var timer: Timer?
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -56,6 +55,10 @@ class MainViewController: UIViewController {
 //        vcName?.modalPresentationStyle = .fullScreen
 //        self.present(vcName!, animated: false, completion: nil)
     }
+    
+    
+    private var timer: Timer?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,6 +118,57 @@ class MainViewController: UIViewController {
         super.viewWillAppear(animated)
         startTimer()
     }
+    override func viewWillDisappear(_ animated: Bool) {
+           super.viewWillDisappear(animated)
+
+           stopTimer()
+    }
+    
+    private func startTimer() {
+            timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(handleTimer), userInfo: nil, repeats: true)
+        }
+
+        @objc private func handleTimer() {
+            APIManager.confirmSafety(clubId: 3) { result in
+                switch result{
+                case .success(let res):
+                    if res.safety != "SAFE"{
+                        print("sdfdsfsdfsdfsdf\(res.option)")
+                    
+                        if res.option == 1{
+                            let storyboard = UIStoryboard(name: "CustomAlert", bundle: nil)
+                            let vcName = storyboard.instantiateViewController(withIdentifier: "CustomAlertPeopleViewController")
+                            vcName.modalPresentationStyle = .fullScreen
+                            self.present(vcName, animated: false, completion: nil)
+                        }
+                        else if res.option == 2{
+                            let storyboard = UIStoryboard(name: "CustomAlert", bundle: nil)
+                            let vcName = storyboard.instantiateViewController(withIdentifier: "CustomAlertOutViewController")
+                            vcName.modalPresentationStyle = .fullScreen
+                            self.present(vcName, animated: false, completion: nil)
+                        }
+                        else{
+                            let storyboard = UIStoryboard(name: "CustomAlert", bundle: nil)
+                            let vcName = storyboard.instantiateViewController(withIdentifier: "CustomAlertFireViewController")
+                            vcName.modalPresentationStyle = .fullScreen
+                            self.present(vcName, animated: false, completion: nil)
+                        }
+                    }
+                    else{
+                        return
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            }
+
+        }
+
+        private func stopTimer() {
+            timer?.invalidate()
+            timer = nil
+        }
+
     
     // 그림자 추가 함수
     func shadowSetting(_ btn: UIButton) {
@@ -253,42 +307,5 @@ class MainViewController: UIViewController {
             self.present(vcName, animated: false, completion: nil)
             
         }
-    }
-}
-
-extension MainViewController{
-        
-    func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(timerHandler), userInfo: nil, repeats: true)
-    }
-    
-    @objc private func timerHandler() {
-        print("요청함")
-        APIManager.confirmSafety(clubId: 1) { result in
-            switch result{
-            case .success(let res):
-                if res.safety == "SAFE" {return}
-                //위험한 경우
-                else{
-                    self.stopTimer()
-                    switch res.option{
-                    case 1: print("1")
-                    case 2: print("2")
-                    case 3: print("3")
-                    default:
-                        break
-                    }
-                    
-
-                }
-            case .failure(_):
-                print("안전 확인 요청 실패")
-            }
-        }
-    }
-
-    func stopTimer() {
-        timer?.invalidate()
-        timer = nil
     }
 }
