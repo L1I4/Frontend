@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -60,7 +60,7 @@
                                                                     <rect key="frame" x="0.0" y="135" width="334" height="100"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wW4-au-Tan">
-                                                                            <rect key="frame" x="10" y="10" width="231.66666666666666" height="24"/>
+                                                                            <rect key="frame" x="10" y="10" width="185.33333333333334" height="24"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L1M4 CLUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmw-fq-SAj">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="24"/>
@@ -69,16 +69,10 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="scd-aR-AU7">
-                                                                                    <rect key="frame" x="117.66666666666669" y="0.0" width="114" height="24"/>
+                                                                                    <rect key="frame" x="117.66666666666666" y="0.0" width="67.666666666666657" height="24"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영업 시간 |" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTk-q3-9nW">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="24"/>
-                                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
-                                                                                            <nil key="textColor"/>
-                                                                                            <nil key="highlightedColor"/>
-                                                                                        </label>
                                                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojx-5X-Esk">
-                                                                                            <rect key="frame" x="46.333333333333321" y="0.0" width="67.666666666666686" height="24"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="24"/>
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzp-tb-be3">
                                                                                                     <rect key="frame" x="0.0" y="0.0" width="29" height="24"/>
@@ -313,6 +307,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="capacityLabel" destination="efb-Gb-KvE" id="OCS-ie-aDO"/>
+                                            <outlet property="clubImg" destination="M4R-5L-3ay" id="oWF-pa-z4B"/>
+                                            <outlet property="clubNameLabel" destination="fmw-fq-SAj" id="QcS-3h-fXI"/>
                                             <outlet property="djLabel" destination="YbD-7o-SPO" id="GVL-Y9-5mk"/>
                                             <outlet property="endTimeLabel" destination="jLi-jS-3A7" id="1O7-AH-DVh"/>
                                             <outlet property="expandView" destination="YJJ-H3-CGr" id="baD-cX-1sj"/>

@@ -15,6 +15,9 @@ class TicketViewController: UIViewController {
     @IBOutlet weak var advertiseTopConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var adHeight: NSLayoutConstraint!
+    
+    var ticketArray:TicketResponse?
+    
     var ticketImg :UIImageView = {
         let img = UIImageView()
         img.image = UIImage(named: "ticket")
@@ -79,12 +82,26 @@ class TicketViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        APIManager.readTicket(userId: 1) { result in
+            print(result)
+            switch result{
+            case .success(let ticketList):
+                self.ticketArray = ticketList
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
 }
 
 extension TicketViewController: UITableViewDelegate, UITableViewDataSource{
     //section의 수
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return ticketArray?.count ?? 0
     }
     
     //section 당 row의 수
@@ -99,6 +116,9 @@ extension TicketViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TicketTableViewCell", for: indexPath) as! TicketTableViewCell
         cell.delegate = self
+        cell.clubId = ticketArray![indexPath.section].clubID
+        cell.dateLabel.text = "\(ticketArray![indexPath.section].generatedDate[0])-\(ticketArray![indexPath.section].generatedDate[1])-\(ticketArray![indexPath.section].generatedDate[2])"
+        cell.clubNameLabel.text = ticketArray![indexPath.section].clubName
         return cell
     }
 }
@@ -159,10 +179,14 @@ extension TicketViewController: TicketCellDelegate{
     
     
     func confirmBtnTapped(in cell: TicketTableViewCell) {
+        
         let alert = UIAlertController(title: "알림", message: "사용 확인 시 복구가 불가능합니다.\n쿠폰 사용 확인을 하는 직원이 맞습니까?", preferredStyle: .alert)
         //확인을 누르면 오토 레이아웃 수정
         let ok = UIAlertAction(title: "확인", style: .destructive){_ in
             self.setupUI()
+            APIManager.userState(clubId: cell.clubId! , userId: 1) { result in
+                print("")
+            }
         }
         let cancel = UIAlertAction(title: "취소", style: .default)
         
