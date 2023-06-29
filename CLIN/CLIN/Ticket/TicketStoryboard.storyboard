@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--나의 티켓-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TicketViewController" id="Y6W-OH-hqX" customClass="TicketViewController" customModule="CLIN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-o6-wUh">
+                                <rect key="frame" x="0.0" y="62" width="393" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cF5-l7-gzu"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TwY-H3-aGs">
+                                <rect key="frame" x="46.666666666666657" y="159" width="300" height="470"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ticket" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-bB-7On">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="370"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="am6-2y-ccz"/>
+                                            <constraint firstAttribute="height" constant="370" id="o6s-7x-C3x"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xf-TX-vZj">
+                                        <rect key="frame" x="0.0" y="370" width="300" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9g-RW-SaE">
+                                                <rect key="frame" x="101" y="59" width="97.666666666666686" height="38"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="입장 확인">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="confirmBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CYN-Tc-sBz"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="1sE-8e-hz8">
+                                                <rect key="frame" x="22" y="7.9999999999999982" width="181.66666666666666" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매 일시 |" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acf-O7-He9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yyyy.MM.dd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-cp-M66">
+                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="92" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Hgq-aC-9yr"/>
+                                            <constraint firstAttribute="bottom" secondItem="i9g-RW-SaE" secondAttribute="bottom" constant="3" id="cws-DI-IUx"/>
+                                            <constraint firstAttribute="width" constant="300" id="ffB-PI-jp4"/>
+                                            <constraint firstItem="i9g-RW-SaE" firstAttribute="centerX" secondItem="0xf-TX-vZj" secondAttribute="centerX" id="k8w-dt-SWh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ko6-4v-e8S">
+                                <rect key="frame" x="46.666666666666657" y="669" width="300" height="100"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.56470588239999997" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="TaI-Id-Hr5"/>
+                                    <constraint firstAttribute="height" constant="100" id="bIE-VD-sbs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입장 확인이 완료되었습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhV-EB-3dP">
+                                <rect key="frame" x="112.66666666666669" y="131" width="168" height="18"/>
+                                <color key="tintColor" red="0.14901960780000001" green="0.56470588239999997" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.56470588239999997" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pfE-o6-wUh" secondAttribute="trailing" id="7Ef-qG-vi1"/>
+                            <constraint firstItem="TwY-H3-aGs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="A34-3B-IOK"/>
+                            <constraint firstItem="pfE-o6-wUh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ftu-uy-3Jc"/>
+                            <constraint firstItem="pfE-o6-wUh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Izp-Du-JT9"/>
+                            <constraint firstItem="MhV-EB-3dP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="LoW-a3-HdJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ko6-4v-e8S" secondAttribute="bottom" id="TjV-br-oeM"/>
+                            <constraint firstItem="ko6-4v-e8S" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="iyR-FD-IDJ"/>
+                            <constraint firstItem="TwY-H3-aGs" firstAttribute="top" secondItem="MhV-EB-3dP" secondAttribute="bottom" constant="10" id="oA6-eT-QCc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TwY-H3-aGs" secondAttribute="bottom" constant="140" id="s74-cr-Ozi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="나의 티켓" id="gOU-wP-mBa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ConfirmMsg" destination="MhV-EB-3dP" id="Br6-GE-lI8"/>
+                        <outlet property="advertiseImg" destination="pfE-o6-wUh" id="Ln9-sy-vpD"/>
+                        <outlet property="advertiseTopAnchor" destination="Ftu-uy-3Jc" id="0lD-AY-Wec"/>
+                        <outlet property="bottomView" destination="ko6-4v-e8S" id="hzK-ro-QyG"/>
+                        <outlet property="stackView" destination="TwY-H3-aGs" id="3wc-f9-wR2"/>
+                        <outlet property="stackViewBottomAnchor" destination="s74-cr-Ozi" id="65r-oc-CrI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil.slash" catalog="system" width="128" height="113"/>
+        <image name="ticket" width="152" height="186"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
