@@ -245,10 +245,10 @@ class APIManager{
     }
     
     //클럽 내 안전상태 확인 요청
-    static func confirmSafety(clubId: Int, completion: @escaping (Result<DataResponse, Error>) -> Void){
+    static func confirmSafety(clubId: Int, completion: @escaping (Result<SafetyResponse, Error>) -> Void){
         let endpoint = String(format: APIConstant.clientObserver, clubId)
 
-        AF.request(endpoint, method: .get).responseDecodable(of: DataResponse.self) { response in
+        AF.request(endpoint, method: .get).responseDecodable(of: SafetyResponse.self) { response in
             switch response.result{
             case .success(let res):
                 print("클랩 안전 상태 조회 성공")
