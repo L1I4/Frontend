@@ -17,7 +17,6 @@
 		3106F8232A4CDEB0008C9ACD /* ClubListCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */; };
 		3106F8252A4CDECE008C9ACD /* ClubListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8242A4CDECE008C9ACD /* ClubListTableViewCell.swift */; };
 		3106F8272A4CDEDB008C9ACD /* ClubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8262A4CDEDB008C9ACD /* ClubListViewController.swift */; };
-		3106F82A2A4CDEFF008C9ACD /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */; };
 		3106F82C2A4CDF1E008C9ACD /* TicketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */; };
 		3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066B2A4C6BE100B63270 /* AppDelegate.swift */; };
 		3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066D2A4C6BE100B63270 /* SceneDelegate.swift */; };
@@ -28,6 +27,9 @@
 		312006832A4C6BE200B63270 /* CLINTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312006822A4C6BE200B63270 /* CLINTests.swift */; };
 		3120068D2A4C6BE200B63270 /* CLINUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120068C2A4C6BE200B63270 /* CLINUITests.swift */; };
 		3120068F2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */; };
+		3155DD9D2A4D7E8D0031665D /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DD9C2A4D7E8D0031665D /* TicketViewController.swift */; };
+		3155DD9F2A4D7E9B0031665D /* TicketCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DD9E2A4D7E9B0031665D /* TicketCellDelegate.swift */; };
+		3155DDA12A4D7EB20031665D /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DDA02A4D7EB20031665D /* TicketTableViewCell.swift */; };
 		3174493F2A4D190600029862 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174493E2A4D190600029862 /* APIConstant.swift */; };
 		317449412A4D20BE00029862 /* apiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449402A4D20BE00029862 /* apiManager.swift */; };
 		317449432A4D21C600029862 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449422A4D21C500029862 /* DataResponse.swift */; };
@@ -80,7 +82,6 @@
 		3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListCellDelegate.swift; sourceTree = "<group>"; };
 		3106F8242A4CDECE008C9ACD /* ClubListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListTableViewCell.swift; sourceTree = "<group>"; };
 		3106F8262A4CDEDB008C9ACD /* ClubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListViewController.swift; sourceTree = "<group>"; };
-		3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TicketStoryboard.storyboard; sourceTree = "<group>"; };
 		312006682A4C6BE100B63270 /* CLIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120066B2A4C6BE100B63270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +96,9 @@
 		312006882A4C6BE200B63270 /* CLINUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLINUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120068C2A4C6BE200B63270 /* CLINUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLINUITests.swift; sourceTree = "<group>"; };
 		3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLINUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3155DD9C2A4D7E8D0031665D /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		3155DD9E2A4D7E9B0031665D /* TicketCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCellDelegate.swift; sourceTree = "<group>"; };
+		3155DDA02A4D7EB20031665D /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		3174493E2A4D190600029862 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		317449402A4D20BE00029862 /* apiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiManager.swift; sourceTree = "<group>"; };
 		317449422A4D21C500029862 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
@@ -180,8 +184,10 @@
 		3106F8282A4CDEE5008C9ACD /* Ticket */ = {
 			isa = PBXGroup;
 			children = (
-				3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */,
 				3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */,
+				3155DD9C2A4D7E8D0031665D /* TicketViewController.swift */,
+				3155DDA02A4D7EB20031665D /* TicketTableViewCell.swift */,
+				3155DD9E2A4D7E9B0031665D /* TicketCellDelegate.swift */,
 			);
 			path = Ticket;
 			sourceTree = "<group>";
@@ -561,6 +567,7 @@
 				2E7F25722A4CC61900B91863 /* PwViewController.swift in Sources */,
 				2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */,
 				317449412A4D20BE00029862 /* apiManager.swift in Sources */,
+				3155DD9D2A4D7E8D0031665D /* TicketViewController.swift in Sources */,
 				3106F8272A4CDEDB008C9ACD /* ClubListViewController.swift in Sources */,
 				3174494C2A4D46E700029862 /* TicketResponse.swift in Sources */,
 				312006702A4C6BE100B63270 /* ViewController.swift in Sources */,
@@ -568,6 +575,7 @@
 				2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */,
 				2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
+				3155DD9F2A4D7E9B0031665D /* TicketCellDelegate.swift in Sources */,
 				DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */,
 				317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */,
 				2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */,
@@ -582,9 +590,9 @@
 				3174494E2A4D476600029862 /* ClubListResponse.swift in Sources */,
 				3174493F2A4D190600029862 /* APIConstant.swift in Sources */,
 				317449502A4D483C00029862 /* ClubInfoResponse.swift in Sources */,
+				3155DDA12A4D7EB20031665D /* TicketTableViewCell.swift in Sources */,
 				317449432A4D21C600029862 /* DataResponse.swift in Sources */,
 				3174494A2A4D42A000029862 /* ReadReportResponse.swift in Sources */,
-				3106F82A2A4CDEFF008C9ACD /* TicketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
