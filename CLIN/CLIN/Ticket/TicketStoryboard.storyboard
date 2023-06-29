@@ -97,6 +97,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="c5k-G3-3P5" id="NcW-Kc-WMQ"/>
+                                            <outlet property="img" destination="fim-KT-b85" id="eg6-HI-MTx"/>
                                             <outlet property="ticketStackView" destination="KSZ-6D-59O" id="0jD-ef-nyU"/>
                                         </connections>
                                     </tableViewCell>

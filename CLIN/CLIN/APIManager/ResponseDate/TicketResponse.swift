@@ -7,11 +7,17 @@
 
 import Foundation
 
-// MARK: - TicketResponseElement
+// MARK: - ClubInfoResponseElement
 struct TicketResponseElement: Codable {
+    let clubID: Int
     let clubName: String
-    let generatedDate: String?
+    let generatedDate: [Int]
     let userStatus: String
+
+    enum CodingKeys: String, CodingKey {
+        case clubID = "clubId"
+        case clubName, generatedDate, userStatus
+    }
 }
 
 typealias TicketResponse = [TicketResponseElement]

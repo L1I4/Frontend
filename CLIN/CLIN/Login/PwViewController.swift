@@ -62,6 +62,7 @@ extension PwViewController: UITextFieldDelegate{
                 "phoneNumber": phoneNumber,
                 "password": newText
             ]
+            print("@@@")
             
             APIManager.login(param: loinParam, completion: { result in
                 switch result {
