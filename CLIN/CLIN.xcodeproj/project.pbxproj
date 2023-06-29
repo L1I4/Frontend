@@ -33,6 +33,13 @@
 		3174493F2A4D190600029862 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174493E2A4D190600029862 /* APIConstant.swift */; };
 		317449412A4D20BE00029862 /* apiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449402A4D20BE00029862 /* apiManager.swift */; };
 		317449432A4D21C600029862 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449422A4D21C500029862 /* DataResponse.swift */; };
+		317449452A4D393B00029862 /* BlankResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449442A4D393B00029862 /* BlankResponse.swift */; };
+		317449472A4D3F0A00029862 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449462A4D3F0A00029862 /* LoginResponse.swift */; };
+		3174494A2A4D42A000029862 /* ReadReportResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449492A4D42A000029862 /* ReadReportResponse.swift */; };
+		3174494C2A4D46E700029862 /* TicketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174494B2A4D46E700029862 /* TicketResponse.swift */; };
+		3174494E2A4D476600029862 /* ClubListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174494D2A4D476600029862 /* ClubListResponse.swift */; };
+		317449502A4D483C00029862 /* ClubInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174494F2A4D483C00029862 /* ClubInfoResponse.swift */; };
+		317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449532A4D497A00029862 /* TableStatusInfoResponse.swift */; };
 		4F7656E07EB4D738C94EBA44 /* Pods_CLIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59321E095691AE0CC1B18B5 /* Pods_CLIN.framework */; };
 		6DC3A54B1DCA0AB3D6B89FAA /* Pods_CLIN_CLINUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D656B91287D3F51500B5D4E2 /* Pods_CLIN_CLINUITests.framework */; };
 		DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FF32A4C7DD9000FEE95 /* MainViewController.swift */; };
@@ -91,6 +98,13 @@
 		3174493E2A4D190600029862 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		317449402A4D20BE00029862 /* apiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiManager.swift; sourceTree = "<group>"; };
 		317449422A4D21C500029862 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
+		317449442A4D393B00029862 /* BlankResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankResponse.swift; sourceTree = "<group>"; };
+		317449462A4D3F0A00029862 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		317449492A4D42A000029862 /* ReadReportResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadReportResponse.swift; sourceTree = "<group>"; };
+		3174494B2A4D46E700029862 /* TicketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketResponse.swift; sourceTree = "<group>"; };
+		3174494D2A4D476600029862 /* ClubListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListResponse.swift; sourceTree = "<group>"; };
+		3174494F2A4D483C00029862 /* ClubInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubInfoResponse.swift; sourceTree = "<group>"; };
+		317449532A4D497A00029862 /* TableStatusInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableStatusInfoResponse.swift; sourceTree = "<group>"; };
 		39EE6DCA617BD5E4BD4722FB /* Pods-CLIN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN.release.xcconfig"; path = "Target Support Files/Pods-CLIN/Pods-CLIN.release.xcconfig"; sourceTree = "<group>"; };
 		9384F4538234BDA9ECB24441 /* Pods-CLINTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLINTests.release.xcconfig"; path = "Target Support Files/Pods-CLINTests/Pods-CLINTests.release.xcconfig"; sourceTree = "<group>"; };
 		99DAB50961405F5B8F1AF19F /* Pods-CLIN-CLINUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN-CLINUITests.release.xcconfig"; path = "Target Support Files/Pods-CLIN-CLINUITests/Pods-CLIN-CLINUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,9 +237,24 @@
 			children = (
 				3174493E2A4D190600029862 /* APIConstant.swift */,
 				317449402A4D20BE00029862 /* apiManager.swift */,
-				317449422A4D21C500029862 /* DataResponse.swift */,
+				317449482A4D428800029862 /* ResponseDate */,
 			);
 			path = APIManager;
+			sourceTree = "<group>";
+		};
+		317449482A4D428800029862 /* ResponseDate */ = {
+			isa = PBXGroup;
+			children = (
+				317449462A4D3F0A00029862 /* LoginResponse.swift */,
+				317449442A4D393B00029862 /* BlankResponse.swift */,
+				317449422A4D21C500029862 /* DataResponse.swift */,
+				317449492A4D42A000029862 /* ReadReportResponse.swift */,
+				3174494B2A4D46E700029862 /* TicketResponse.swift */,
+				3174494D2A4D476600029862 /* ClubListResponse.swift */,
+				3174494F2A4D483C00029862 /* ClubInfoResponse.swift */,
+				317449532A4D497A00029862 /* TableStatusInfoResponse.swift */,
+			);
+			path = ResponseDate;
 			sourceTree = "<group>";
 		};
 		B38642EA46EA297244ADB580 /* Pods */ = {
@@ -514,21 +543,29 @@
 				317449412A4D20BE00029862 /* apiManager.swift in Sources */,
 				3106F8272A4CDEDB008C9ACD /* ClubListViewController.swift in Sources */,
 
+				3174494C2A4D46E700029862 /* TicketResponse.swift in Sources */,
 				312006702A4C6BE100B63270 /* ViewController.swift in Sources */,
 				2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */,
 				2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
 
-				2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */,
+				317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */,
 
+
+				2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */,
 				3106F8232A4CDEB0008C9ACD /* ClubListCellDelegate.swift in Sources */,
 
 				3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */,
+				317449472A4D3F0A00029862 /* LoginResponse.swift in Sources */,
 				DD450FF82A4C95F5000FEE95 /* MainBeforeViewController.swift in Sources */,
 				DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */,
 				3106F8252A4CDECE008C9ACD /* ClubListTableViewCell.swift in Sources */,
+				317449452A4D393B00029862 /* BlankResponse.swift in Sources */,
+				3174494E2A4D476600029862 /* ClubListResponse.swift in Sources */,
 				3174493F2A4D190600029862 /* APIConstant.swift in Sources */,
+				317449502A4D483C00029862 /* ClubInfoResponse.swift in Sources */,
 				317449432A4D21C600029862 /* DataResponse.swift in Sources */,
+				3174494A2A4D42A000029862 /* ReadReportResponse.swift in Sources */,
 				3106F82A2A4CDEFF008C9ACD /* TicketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
