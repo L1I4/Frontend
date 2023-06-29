@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-o6-wUh">
-                                <rect key="frame" x="0.0" y="62" width="393" height="55"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ad" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-o6-wUh">
+                                <rect key="frame" x="0.0" y="59" width="393" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="cF5-l7-gzu"/>
                                 </constraints>
@@ -96,6 +96,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="dateLabel" destination="c5k-G3-3P5" id="NcW-Kc-WMQ"/>
                                             <outlet property="ticketStackView" destination="KSZ-6D-59O" id="0jD-ef-nyU"/>
                                         </connections>
                                     </tableViewCell>
@@ -128,7 +129,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil.slash" catalog="system" width="128" height="113"/>
+        <image name="Ad" width="323" height="98"/>
         <image name="ticket" width="152" height="186"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
