@@ -52,7 +52,7 @@ extension EnterPwViewController: UITextFieldDelegate{
             let new_idx = newText.count
 
             if old_idx < new_idx{
-                pwCircles[new_idx-1].layer.backgroundColor = UIColor.green.cgColor
+                pwCircles[new_idx-1].layer.backgroundColor = UIColor(red: 72.0/255.0, green: 142.0/255.0, blue: 92.0/255.0, alpha: 1.0).cgColor
             }else if old_idx > new_idx{
                 pwCircles[new_idx].layer.backgroundColor = UIColor.lightGray.cgColor
             }
