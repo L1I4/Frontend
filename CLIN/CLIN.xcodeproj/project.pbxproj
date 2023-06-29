@@ -17,7 +17,6 @@
 		3106F8232A4CDEB0008C9ACD /* ClubListCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */; };
 		3106F8252A4CDECE008C9ACD /* ClubListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8242A4CDECE008C9ACD /* ClubListTableViewCell.swift */; };
 		3106F8272A4CDEDB008C9ACD /* ClubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8262A4CDEDB008C9ACD /* ClubListViewController.swift */; };
-		3106F82A2A4CDEFF008C9ACD /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */; };
 		3106F82C2A4CDF1E008C9ACD /* TicketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */; };
 		3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066B2A4C6BE100B63270 /* AppDelegate.swift */; };
 		3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066D2A4C6BE100B63270 /* SceneDelegate.swift */; };
@@ -38,6 +37,9 @@
 		3174494E2A4D476600029862 /* ClubListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174494D2A4D476600029862 /* ClubListResponse.swift */; };
 		317449502A4D483C00029862 /* ClubInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174494F2A4D483C00029862 /* ClubInfoResponse.swift */; };
 		317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449532A4D497A00029862 /* TableStatusInfoResponse.swift */; };
+		317449562A4D504D00029862 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449552A4D504D00029862 /* TicketViewController.swift */; };
+		3174495A2A4D533F00029862 /* TicketCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449592A4D533F00029862 /* TicketCellDelegate.swift */; };
+		3174495C2A4D537400029862 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174495B2A4D537400029862 /* TicketTableViewCell.swift */; };
 		4F7656E07EB4D738C94EBA44 /* Pods_CLIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59321E095691AE0CC1B18B5 /* Pods_CLIN.framework */; };
 		6DC3A54B1DCA0AB3D6B89FAA /* Pods_CLIN_CLINUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D656B91287D3F51500B5D4E2 /* Pods_CLIN_CLINUITests.framework */; };
 		DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FF32A4C7DD9000FEE95 /* MainViewController.swift */; };
@@ -80,7 +82,6 @@
 		3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListCellDelegate.swift; sourceTree = "<group>"; };
 		3106F8242A4CDECE008C9ACD /* ClubListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListTableViewCell.swift; sourceTree = "<group>"; };
 		3106F8262A4CDEDB008C9ACD /* ClubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListViewController.swift; sourceTree = "<group>"; };
-		3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TicketStoryboard.storyboard; sourceTree = "<group>"; };
 		312006682A4C6BE100B63270 /* CLIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120066B2A4C6BE100B63270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +106,9 @@
 		3174494D2A4D476600029862 /* ClubListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListResponse.swift; sourceTree = "<group>"; };
 		3174494F2A4D483C00029862 /* ClubInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubInfoResponse.swift; sourceTree = "<group>"; };
 		317449532A4D497A00029862 /* TableStatusInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableStatusInfoResponse.swift; sourceTree = "<group>"; };
+		317449552A4D504D00029862 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		317449592A4D533F00029862 /* TicketCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCellDelegate.swift; sourceTree = "<group>"; };
+		3174495B2A4D537400029862 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		39EE6DCA617BD5E4BD4722FB /* Pods-CLIN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN.release.xcconfig"; path = "Target Support Files/Pods-CLIN/Pods-CLIN.release.xcconfig"; sourceTree = "<group>"; };
 		9384F4538234BDA9ECB24441 /* Pods-CLINTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLINTests.release.xcconfig"; path = "Target Support Files/Pods-CLINTests/Pods-CLINTests.release.xcconfig"; sourceTree = "<group>"; };
 		99DAB50961405F5B8F1AF19F /* Pods-CLIN-CLINUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN-CLINUITests.release.xcconfig"; path = "Target Support Files/Pods-CLIN-CLINUITests/Pods-CLIN-CLINUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,8 +184,10 @@
 		3106F8282A4CDEE5008C9ACD /* Ticket */ = {
 			isa = PBXGroup;
 			children = (
-				3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */,
 				3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */,
+				317449552A4D504D00029862 /* TicketViewController.swift */,
+				317449592A4D533F00029862 /* TicketCellDelegate.swift */,
+				3174495B2A4D537400029862 /* TicketTableViewCell.swift */,
 			);
 			path = Ticket;
 			sourceTree = "<group>";
@@ -211,6 +217,13 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
+
+				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
+				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
+				2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */,
+				2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */,
+				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
+
 				DD450FFE2A4D4DA3000FEE95 /* AlertPage */,
 				2E7F257C2A4D4BD200B91863 /* Login */,
 				3174493D2A4D18EF00029862 /* APIManager */,
@@ -557,6 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				DD9D0BC32A4D6B9F000FE6CC /* CustomAlertPeopleViewController.swift in Sources */,
 				2E7F25722A4CC61900B91863 /* PwViewController.swift in Sources */,
 				2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */,
@@ -567,7 +581,9 @@
 				DD9D0BC52A4D6BBA000FE6CC /* CustomAlertOutViewController.swift in Sources */,
 				2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */,
 				2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */,
+				317449562A4D504D00029862 /* TicketViewController.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
+
 				DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */,
 				317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */,
 				2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */,
@@ -584,7 +600,8 @@
 				317449502A4D483C00029862 /* ClubInfoResponse.swift in Sources */,
 				317449432A4D21C600029862 /* DataResponse.swift in Sources */,
 				3174494A2A4D42A000029862 /* ReadReportResponse.swift in Sources */,
-				3106F82A2A4CDEFF008C9ACD /* TicketViewController.swift in Sources */,
+				3174495A2A4D533F00029862 /* TicketCellDelegate.swift in Sources */,
+				3174495C2A4D537400029862 /* TicketTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
