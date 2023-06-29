@@ -10,10 +10,12 @@ import Foundation
 // MARK: - LoginResponse
 struct LoginResponse: Codable {
     let userID: Int
-    let phoneNumber, name: String
+    let phoneNumber, name, type: String
+    let clubJoined: Bool
+    let joinedClubNo: Int
 
     enum CodingKeys: String, CodingKey {
         case userID = "userId"
-        case phoneNumber, name
+        case phoneNumber, name, type, clubJoined, joinedClubNo
     }
 }

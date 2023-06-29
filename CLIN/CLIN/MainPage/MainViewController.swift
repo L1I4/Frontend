@@ -46,6 +46,7 @@ class MainViewController: UIViewController {
     
     var checkCall: String = ""
     var tableCall: String = ""
+    private var timer: Timer?
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -108,6 +109,11 @@ class MainViewController: UIViewController {
         let range = (clinCallLabel.text! as NSString).range(of: "클린 콜")
         attributedString.addAttribute(.foregroundColor, value: UIColor(red: 0.15, green: 0.57, blue: 0.34, alpha: 1), range: range)
         clinCallLabel.attributedText = attributedString
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        startTimer()
     }
     
     // 그림자 추가 함수
@@ -241,5 +247,42 @@ class MainViewController: UIViewController {
             self.present(vcName, animated: false, completion: nil)
             
         }
+    }
+}
+
+extension MainViewController{
+        
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(timerHandler), userInfo: nil, repeats: true)
+    }
+    
+    @objc private func timerHandler() {
+        print("요청함")
+        APIManager.confirmSafety(clubId: 1) { result in
+            switch result{
+            case .success(let res):
+                if res.safety == "SAFE" {return}
+                //위험한 경우
+                else{
+                    self.stopTimer()
+                    switch res.option{
+                    case 1: print("1")
+                    case 2: print("2")
+                    case 3: print("3")
+                    default:
+                        break
+                    }
+                    
+
+                }
+            case .failure(_):
+                print("안전 확인 요청 실패")
+            }
+        }
+    }
+
+    func stopTimer() {
+        timer?.invalidate()
+        timer = nil
     }
 }
