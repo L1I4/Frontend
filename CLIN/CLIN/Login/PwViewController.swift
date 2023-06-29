@@ -73,16 +73,33 @@ extension PwViewController: UITextFieldDelegate{
                     // 로그인 요청 성공
                     print("로그인 성공")
                     
-                    // userID local DB 저장
+                    // userID / type local DB 저장
                     print(response.userID)
+                    print(response.type)
+                    
                     UserDefaults.standard.set(response.userID, forKey: "userID")
+                    UserDefaults.standard.set(response.type, forKey: "type")
                     
-                    // tabBarController 로 전환.
-                    let storyboard = UIStoryboard(name: "ViewManager", bundle: nil)
-                    let tabBarController = storyboard.instantiateViewController(withIdentifier: "start")
+                    if response.type == "USER"{
+                        
+                        // tabBarController 로 전환.
+                        let storyboard = UIStoryboard(name: "ViewManager", bundle: nil)
+                        let tabBarController = storyboard.instantiateViewController(withIdentifier: "start")
+                        
+                        tabBarController.modalPresentationStyle = .fullScreen
+                        self.present(tabBarController, animated: true)
+                        
+                    }else if response.type == "ADMIN"{
                     
-                    tabBarController.modalPresentationStyle = .fullScreen
-                    self.present(tabBarController, animated: true)
+                        let storyboard = UIStoryboard(name: "adminMain", bundle: nil)
+                        let nextVC = storyboard.instantiateInitialViewController()
+                        //storyboard.instantiateViewController(withIdentifier: "adminMainViewController")
+                        
+                        nextVC!.modalPresentationStyle = .fullScreen
+                        self.present(nextVC!, animated: true)
+                        
+                    }
+                                
 
                 case .failure(let error):
                     // 로그인 요청 실패
