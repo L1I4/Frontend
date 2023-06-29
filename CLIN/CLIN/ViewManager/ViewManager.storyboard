@@ -16,7 +16,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fp-YH-le1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-542" y="454"/>
+            <point key="canvasLocation" x="-565" y="454"/>
         </scene>
         <!--MainPage-->
         <scene sceneID="Ve9-I8-sct">
@@ -26,7 +26,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtC-2I-iee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103" y="454"/>
+            <point key="canvasLocation" x="2" y="454"/>
+        </scene>
+        <!--MyPage-->
+        <scene sceneID="XM4-4J-OG6">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MyPage" storyboardName="MyPage" id="xzR-1M-7uZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="l7X-Q9-X3s"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhT-xx-5TV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="454"/>
         </scene>
         <!--ClubListStoryboard-->
         <scene sceneID="UxN-MN-wht">
@@ -37,7 +47,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otU-FM-9wG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-900" y="454"/>
+            <point key="canvasLocation" x="-268" y="454"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uJW-el-Eyg">
@@ -50,9 +60,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ZZq-nI-Mve" kind="relationship" relationship="viewControllers" id="h87-bF-LpM"/>
                         <segue destination="rYZ-Mn-VEL" kind="relationship" relationship="viewControllers" id="tr9-to-t0k"/>
-                        <segue destination="jid-Jd-6Te" kind="relationship" relationship="viewControllers" id="wUY-ze-477"/>
+                        <segue destination="ZZq-nI-Mve" kind="relationship" relationship="viewControllers" id="fYe-Vk-qrg"/>
+                        <segue destination="jid-Jd-6Te" kind="relationship" relationship="viewControllers" id="DFS-JG-nHz"/>
+                        <segue destination="xzR-1M-7uZ" kind="relationship" relationship="viewControllers" id="7lY-US-edA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkc-QB-fNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
