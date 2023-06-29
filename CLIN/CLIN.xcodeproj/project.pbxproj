@@ -15,6 +15,7 @@
 		2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */; };
 		2E7F257F2A4D741F00B91863 /* ViewManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F257E2A4D741F00B91863 /* ViewManager.storyboard */; };
 		2E9F85BB2A4DAB780082BC8B /* CertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F85BA2A4DAB780082BC8B /* CertificateViewController.swift */; };
+		2E9F85C12A4DAFCE0082BC8B /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F85C02A4DAFCE0082BC8B /* MyPage.storyboard */; };
 		3106F8202A4CDE75008C9ACD /* ClubListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3106F81F2A4CDE75008C9ACD /* ClubListStoryboard.storyboard */; };
 		3106F8232A4CDEB0008C9ACD /* ClubListCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */; };
 		3106F8252A4CDECE008C9ACD /* ClubListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8242A4CDECE008C9ACD /* ClubListTableViewCell.swift */; };
@@ -82,6 +83,7 @@
 		2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReenterPwViewController.swift; sourceTree = "<group>"; };
 		2E7F257E2A4D741F00B91863 /* ViewManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewManager.storyboard; sourceTree = "<group>"; };
 		2E9F85BA2A4DAB780082BC8B /* CertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateViewController.swift; sourceTree = "<group>"; };
+		2E9F85C02A4DAFCE0082BC8B /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		3106F81F2A4CDE75008C9ACD /* ClubListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClubListStoryboard.storyboard; sourceTree = "<group>"; };
 		3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListCellDelegate.swift; sourceTree = "<group>"; };
 		3106F8242A4CDECE008C9ACD /* ClubListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListTableViewCell.swift; sourceTree = "<group>"; };
@@ -183,6 +185,14 @@
 			path = ViewManager;
 			sourceTree = "<group>";
 		};
+		2E9F85BF2A4DAFA10082BC8B /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F85C02A4DAFCE0082BC8B /* MyPage.storyboard */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		3106F81E2A4CDDE9008C9ACD /* ClubList */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +240,7 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
+				2E9F85BF2A4DAFA10082BC8B /* MyPage */,
 				2E7F257D2A4D73C200B91863 /* ViewManager */,
 				DD450FFE2A4D4DA3000FEE95 /* AlertPage */,
 				2E7F257C2A4D4BD200B91863 /* Login */,
@@ -443,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD450FF62A4C7DEE000FEE95 /* MainPage.storyboard in Resources */,
+				2E9F85C12A4DAFCE0082BC8B /* MyPage.storyboard in Resources */,
 				DD4510022A4D4EB8000FEE95 /* CustomAlert.storyboard in Resources */,
 				3106F82C2A4CDF1E008C9ACD /* TicketStoryboard.storyboard in Resources */,
 				312006782A4C6BE200B63270 /* LaunchScreen.storyboard in Resources */,
