@@ -14,6 +14,7 @@ class TicketViewController: UIViewController {
     
     @IBOutlet weak var advertiseTopConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var adHeight: NSLayoutConstraint!
     var ticketImg :UIImageView = {
         let img = UIImageView()
         img.image = UIImage(named: "ticket")
@@ -108,7 +109,7 @@ extension TicketViewController: UITableViewDelegate, UITableViewDataSource{
 extension TicketViewController: TicketCellDelegate{
     func setupUI(){
         self.tableView.isHidden = true
-        
+        adHeight.constant = 60
         ticketBottomView.addSubview(dateLabel)
         ticketBottomView.addSubview(confirmLabel)
         
@@ -131,6 +132,7 @@ extension TicketViewController: TicketCellDelegate{
         ticketImg.alpha = 0.0
         ticketBottomView.alpha = 0.0
         confirmLabel2.alpha = 0.0
+
         
         advertiseTopConstraint.constant = 20
         advertiseImg.image = UIImage(named: "ticketConfirm")
