@@ -37,11 +37,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="lJI-YE-VjI">
-                                <rect key="frame" x="0.0" y="270.66666666666669" width="393" height="336.00000000000006"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ShakeHand" translatesAutoresizingMaskIntoConstraints="NO" id="kf8-Pr-frh">
+                                <rect key="frame" x="0.0" y="258" width="393" height="336.00000000000006"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB5-UT-LYV">
-                                <rect key="frame" x="43" y="676.66666666666663" width="307" height="44"/>
+                                <rect key="frame" x="43" y="602" width="307" height="44"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="본인인증하기">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
@@ -56,20 +56,21 @@
                         <constraints>
                             <constraint firstItem="Qff-Ff-W1G" firstAttribute="top" secondItem="IRp-ao-isO" secondAttribute="bottom" constant="16" id="DSy-kA-oee"/>
                             <constraint firstItem="IRp-ao-isO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="54" id="DsQ-1b-JHQ"/>
-                            <constraint firstItem="lJI-YE-VjI" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="GkN-aU-ERs"/>
-                            <constraint firstItem="lJI-YE-VjI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="KAZ-6k-3eL"/>
-                            <constraint firstItem="zB5-UT-LYV" firstAttribute="top" secondItem="lJI-YE-VjI" secondAttribute="bottom" constant="70" id="Rip-vh-a4f"/>
-                            <constraint firstItem="lJI-YE-VjI" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="RqT-wz-jUM"/>
+                            <constraint firstItem="kf8-Pr-frh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="KCM-ER-Te9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zB5-UT-LYV" secondAttribute="trailing" constant="43" id="UR8-4W-4A0"/>
                             <constraint firstItem="Qff-Ff-W1G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="33" id="YEU-pY-zzW"/>
+                            <constraint firstItem="zB5-UT-LYV" firstAttribute="top" secondItem="kf8-Pr-frh" secondAttribute="bottom" constant="8" symbolic="YES" id="boW-kC-0tm"/>
                             <constraint firstItem="zB5-UT-LYV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="43" id="dpr-ld-wME"/>
+                            <constraint firstItem="kf8-Pr-frh" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" constant="-12.5" id="hQp-1y-1g2"/>
                             <constraint firstItem="IRp-ao-isO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="33" id="iMe-e3-9RD"/>
+                            <constraint firstItem="kf8-Pr-frh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="pE5-Ob-sIw"/>
+                            <constraint firstItem="kf8-Pr-frh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rDk-WA-wck"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-274" y="7"/>
+            <point key="canvasLocation" x="-274.04580152671753" y="6.3380281690140849"/>
         </scene>
         <!--Join View Controller-->
         <scene sceneID="8J5-N1-Uzi">
@@ -364,7 +365,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Rectangle" width="393" height="336"/>
+        <image name="ShakeHand" width="393" height="336"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
