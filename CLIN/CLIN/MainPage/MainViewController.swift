@@ -146,6 +146,9 @@ class MainViewController: UIViewController {
     // 클린콜 눌렀을 때 함수
     @IBAction func touchCleanCallButton(_ sender: UIButton) {
         if clincallButton.backgroundColor == UIColor.white {
+            // clincallButton Checked
+            self.tabBarController?.tabBar.isHidden = true
+            
             clincallButton.backgroundColor = UIColor(red: 0.03, green: 0.33, blue: 0.17, alpha: 1)
             clincallButton.tintColor = UIColor.white
             self.callViewBottomConstraint.constant = 0
@@ -153,6 +156,9 @@ class MainViewController: UIViewController {
                 self.view.layoutIfNeeded()
             }, completion: nil)
         } else {
+            // clincallButton Not Checked
+            self.tabBarController?.tabBar.isHidden = false
+            
             clincallButton.backgroundColor = UIColor.white
             clincallButton.tintColor = UIColor.black
             self.callViewBottomConstraint.constant = -565
