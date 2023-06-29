@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--메인-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="MainViewController" customModule="CLIN" customModuleProvider="target" sceneMemberID="viewController">
@@ -543,7 +543,7 @@
                             <constraint firstItem="RRn-5l-9ma" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="228" id="tZp-DM-bNI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="F0y-2F-ysj"/>
+                    <tabBarItem key="tabBarItem" title="메인" image="tab_main_selected" id="F0y-2F-ysj"/>
                     <navigationItem key="navigationItem" id="HWM-oV-Lg4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -702,6 +702,7 @@
         <image name="clarity_talk-bubbles-solid_y" width="33" height="33"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="non_check" width="20" height="20"/>
+        <image name="tab_main_selected" width="30" height="27"/>
         <image name="tabler_bell-filled" width="30" height="30"/>
         <image name="🍺" width="29" height="29.333333969116211"/>
         <image name="😁" width="29" height="29.333333969116211"/>
