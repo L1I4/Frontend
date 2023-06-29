@@ -293,6 +293,8 @@ class MainViewController: UIViewController {
         } else if tableCall == "" {
             print("again")
         } else {
+            self.tabBarController?.tabBar.isHidden = false
+            
             checkTrue()
             tableTrue()
             
