@@ -44,10 +44,21 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableCall4: UIButton!
     @IBOutlet weak var lastclinCallButton: UIButton!
     
+    var checkCall: String = ""
+    var tableCall: String = ""
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(1)
+        // 로그인 대상자가 아니면
+//        let vcName = self.storyboard?.instantiateViewController(withIdentifier: "MainBeforeViewController")
+//        vcName?.modalPresentationStyle = .fullScreen
+//        self.present(vcName!, animated: false, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
         
         // 둥글게 둥글게
         clincallButton.layer.cornerRadius = 13
@@ -143,47 +154,86 @@ class MainViewController: UIViewController {
                 self.view.layoutIfNeeded()
             }, completion: nil)
             
-            // 여기에 초기화 구현......
+            checkTrue()
+            tableTrue()
+            checkCall = ""
+            tableCall = ""
         }
     }
     
     // 클린콜 안에서 요청사항 고르기
     @IBAction func touchCheckCallBtn(_ sender: UIButton) {
-        if checkCall1.isSelected == true {
-            checkCall1.isSelected = false
-            checkCall1.setImage(UIImage(named: "non_check"), for: .normal)
-        } else if checkCall2.isSelected == true {
-            checkCall2.isSelected = false
-            checkCall2.setImage(UIImage(named: "non_check"), for: .normal)
-        } else {
-            checkCall3.isSelected = false
-            checkCall3.setImage(UIImage(named: "non_check"), for: .normal)
-        }
+        checkTrue()
         sender.isSelected = true
     }
     
     // 클린콜 안에서 내 위치를 테이블 위치로 알려줄 때
     @IBAction func touchTableCallBtn(_ sender: UIButton) {
-        if tableCall1.isSelected == true {
-            tableCall1.isSelected = false
-            tableCall1.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-            tableCall1.tintColor = UIColor.black
-        } else if tableCall2.isSelected == true {
-            tableCall2.isSelected = false
-            tableCall2.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-            tableCall2.tintColor = UIColor.black
-        } else if tableCall3.isSelected == true{
-            tableCall3.isSelected = false
-            tableCall3.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-            tableCall3.tintColor = UIColor.black
-        } else {
-            tableCall4.isSelected = false
-            tableCall4.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-            tableCall4.tintColor = UIColor.black
-        }
+        tableTrue()
         sender.isSelected = true
         sender.backgroundColor = UIColor(red: 0.15, green: 0.57, blue: 0.34, alpha: 1)
         sender.tintColor = UIColor.white
     }
     
+    func checkTrue() {
+        if checkCall1.isSelected == true {
+            checkCall1.isSelected = false
+            checkCall1.setImage(UIImage(named: "non_check"), for: .normal)
+            checkCall = "요청 1"
+        } else if checkCall2.isSelected == true {
+            checkCall2.isSelected = false
+            checkCall2.setImage(UIImage(named: "non_check"), for: .normal)
+            checkCall = "요청 2"
+        } else {
+            checkCall3.isSelected = false
+            checkCall3.setImage(UIImage(named: "non_check"), for: .normal)
+            checkCall = "요청 3"
+        }
+    }
+    
+    func tableTrue() {
+        if tableCall1.isSelected == true {
+            tableCall1.isSelected = false
+            tableCall1.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall1.tintColor = UIColor.black
+            tableCall = "테이블 1"
+        } else if tableCall2.isSelected == true {
+            tableCall2.isSelected = false
+            tableCall2.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall2.tintColor = UIColor.black
+            tableCall = "테이블 2"
+        } else if tableCall3.isSelected == true{
+            tableCall3.isSelected = false
+            tableCall3.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall3.tintColor = UIColor.black
+            tableCall = "테이블 3"
+        } else {
+            tableCall4.isSelected = false
+            tableCall4.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
+            tableCall4.tintColor = UIColor.black
+            tableCall = "테이블 4"
+        }
+    }
+    
+    // 클린콜 부르기 눌렀을 때
+    @IBAction func touchLastClinCall(_ sender: UIButton) {
+        if checkCall == "" {
+            print("again")
+        } else if tableCall == "" {
+            print("again")
+        } else {
+            checkTrue()
+            tableTrue()
+            
+            print(checkCall)
+            print(tableCall)
+            
+            clincallButton.backgroundColor = UIColor.white
+            clincallButton.tintColor = UIColor.black
+            self.callViewBottomConstraint.constant = -565
+            UIView.animate(withDuration: 0.3, delay: 0, animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        } // 접수되었습니다..?
+    }
 }
