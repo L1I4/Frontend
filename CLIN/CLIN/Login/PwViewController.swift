@@ -58,31 +58,32 @@ extension PwViewController: UITextFieldDelegate{
         }else if newText.count == 6{
             /// TODO Login API 호출
             
-            let loinParam: Parameters = [
+            let loginParam: Parameters = [
                 "phoneNumber": phoneNumber,
                 "password": newText
             ]
             print("@@@")
             
-            APIManager.login(param: loinParam, completion: { result in
+            APIManager.login(param: loginParam, completion: { result in
                 switch result {
                 case .success(let response):
                     // 로그인 요청 성공
                     print("로그인 성공")
-
-
-
-                case .failure(let error):
-                    // 로그인 요청 실패
-                    print("로그인 실패: \(error)")
                     
-                    // tabBarController 로 전환. 현재는 서버 문제로 실패시에 배치
-                    /// TODO 성공시로 옮기기
+                    // userID local DB 저장
+                    print(response.userID)
+                    UserDefaults.standard.set(response.userID, forKey: "userID")
+                    
+                    // tabBarController 로 전환.
                     let storyboard = UIStoryboard(name: "ViewManager", bundle: nil)
                     let tabBarController = storyboard.instantiateViewController(withIdentifier: "start")
                     
                     tabBarController.modalPresentationStyle = .fullScreen
                     self.present(tabBarController, animated: true)
+
+                case .failure(let error):
+                    // 로그인 요청 실패
+                    print("로그인 실패: \(error)")
 
                 }
             })
