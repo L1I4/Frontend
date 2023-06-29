@@ -84,7 +84,7 @@ class TicketViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        APIManager.readTicket(userId: 1) { result in
+        APIManager.readTicket(userId: Int(UserDefaults.standard.string(forKey:  "userID")!)!) { result in
             print(result)
             switch result{
             case .success(let ticketList):
@@ -184,7 +184,7 @@ extension TicketViewController: TicketCellDelegate{
         //확인을 누르면 오토 레이아웃 수정
         let ok = UIAlertAction(title: "확인", style: .destructive){_ in
             self.setupUI()
-            APIManager.userState(clubId: cell.clubId! , userId: 1) { result in
+            APIManager.userState(clubId: cell.clubId! , userId: Int(UserDefaults.standard.string(forKey:  "userID")!)!) { result in
                 print("")
             }
         }
