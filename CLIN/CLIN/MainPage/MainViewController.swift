@@ -234,6 +234,11 @@ class MainViewController: UIViewController {
             UIView.animate(withDuration: 0.3, delay: 0, animations: {
                 self.view.layoutIfNeeded()
             }, completion: nil)
-        } // 접수되었습니다..?
+            
+            let storyboard = UIStoryboard(name: "CustomAlert", bundle: nil)
+            let vcName = storyboard.instantiateViewController(withIdentifier: "CustomAlertViewController")
+            vcName.modalPresentationStyle = .fullScreen
+            self.present(vcName, animated: false, completion: nil)
+        }
     }
 }

@@ -21,6 +21,9 @@
 		DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FF32A4C7DD9000FEE95 /* MainViewController.swift */; };
 		DD450FF62A4C7DEE000FEE95 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD450FF52A4C7DEE000FEE95 /* MainPage.storyboard */; };
 		DD450FF82A4C95F5000FEE95 /* MainBeforeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FF72A4C95F5000FEE95 /* MainBeforeViewController.swift */; };
+		DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD450FFF2A4D4DF3000FEE95 /* CustomAlertViewController.swift */; };
+		DD4510022A4D4EB8000FEE95 /* CustomAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */; };
+		DD4510042A4D5984000FEE95 /* CustomAlertFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4510032A4D5984000FEE95 /* CustomAlertFireViewController.swift */; };
 		E682CA74605F2FC21599F9E3 /* Pods_CLINTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB443F0C5ED13C336067647 /* Pods_CLINTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,9 @@
 		DD450FF32A4C7DD9000FEE95 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD450FF52A4C7DEE000FEE95 /* MainPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		DD450FF72A4C95F5000FEE95 /* MainBeforeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBeforeViewController.swift; sourceTree = "<group>"; };
+		DD450FFF2A4D4DF3000FEE95 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlert.storyboard; sourceTree = "<group>"; };
+		DD4510032A4D5984000FEE95 /* CustomAlertFireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertFireViewController.swift; sourceTree = "<group>"; };
 		E59321E095691AE0CC1B18B5 /* Pods_CLIN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLIN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0B625C2F39066BD06C09F /* Pods-CLIN-CLINUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLIN-CLINUITests.debug.xcconfig"; path = "Target Support Files/Pods-CLIN-CLINUITests/Pods-CLIN-CLINUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +128,7 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
+				DD450FFE2A4D4DA3000FEE95 /* AlertPage */,
 				DD450FF22A4C7DAE000FEE95 /* MainPage */,
 				3120066B2A4C6BE100B63270 /* AppDelegate.swift */,
 				3120066D2A4C6BE100B63270 /* SceneDelegate.swift */,
@@ -172,6 +179,16 @@
 				DD450FF52A4C7DEE000FEE95 /* MainPage.storyboard */,
 			);
 			path = MainPage;
+			sourceTree = "<group>";
+		};
+		DD450FFE2A4D4DA3000FEE95 /* AlertPage */ = {
+			isa = PBXGroup;
+			children = (
+				DD450FFF2A4D4DF3000FEE95 /* CustomAlertViewController.swift */,
+				DD4510032A4D5984000FEE95 /* CustomAlertFireViewController.swift */,
+				DD4510012A4D4EB8000FEE95 /* CustomAlert.storyboard */,
+			);
+			path = AlertPage;
 			sourceTree = "<group>";
 		};
 		F0907840D1D11AF8D268A0CA /* Frameworks */ = {
@@ -294,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD450FF62A4C7DEE000FEE95 /* MainPage.storyboard in Resources */,
+				DD4510022A4D4EB8000FEE95 /* CustomAlert.storyboard in Resources */,
 				312006782A4C6BE200B63270 /* LaunchScreen.storyboard in Resources */,
 				312006752A4C6BE200B63270 /* Assets.xcassets in Resources */,
 				312006732A4C6BE100B63270 /* Main.storyboard in Resources */,
@@ -426,8 +444,10 @@
 			files = (
 				312006702A4C6BE100B63270 /* ViewController.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
+				DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */,
 				3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */,
 				DD450FF82A4C95F5000FEE95 /* MainBeforeViewController.swift in Sources */,
+				DD4510042A4D5984000FEE95 /* CustomAlertFireViewController.swift in Sources */,
 				DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
