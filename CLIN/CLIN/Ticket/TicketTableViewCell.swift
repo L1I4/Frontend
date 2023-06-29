@@ -11,6 +11,8 @@ class TicketTableViewCell: UITableViewCell {
     
     weak var delegate: TicketCellDelegate?
     
+    @IBOutlet weak var dateLabel: UILabel!
+    
     @IBOutlet weak var ticketStackView: UIStackView!
     override func awakeFromNib() {
         super.awakeFromNib()
