@@ -239,6 +239,7 @@ class MainViewController: UIViewController {
             let vcName = storyboard.instantiateViewController(withIdentifier: "CustomAlertViewController")
             vcName.modalPresentationStyle = .fullScreen
             self.present(vcName, animated: false, completion: nil)
+            
         }
     }
 }
