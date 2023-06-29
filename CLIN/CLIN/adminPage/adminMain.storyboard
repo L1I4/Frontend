@@ -21,8 +21,8 @@
                                 <rect key="frame" x="0.0" y="261" width="393" height="591"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L1M4 클럽 테이블 현황" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cem-bF-yDo">
-                                        <rect key="frame" x="36" y="20" width="183.33333333333334" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="35.999999999999986" y="20" width="184.66666666666663" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -34,7 +34,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카 운 터" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIc-6i-p4U">
                                                         <rect key="frame" x="19" y="18" width="15" height="63"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -51,7 +51,7 @@
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="출 구" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCk-FP-foS">
                                                 <rect key="frame" x="265" y="167" width="15" height="40.666666666666657"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -224,9 +224,10 @@
                                     <constraint firstAttribute="width" constant="174" id="A5N-hc-Pr2"/>
                                     <constraint firstAttribute="height" constant="76" id="Fjm-ap-xOT"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="tabler_bell-filled" title="클린노티스"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="클린노티스" image="tabler_bell-filled"/>
                                 <connections>
                                     <action selector="touchClinNoticeButton:" destination="LTG-AZ-VWe" eventType="touchUpInside" id="1fe-lG-pYe"/>
                                 </connections>
@@ -238,10 +239,10 @@
                                     <constraint firstAttribute="width" constant="174" id="Oc2-58-rEH"/>
                                     <constraint firstAttribute="height" constant="76" id="eQy-6W-Sf1"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="리액션"/>
-                                <buttonConfiguration key="configuration" style="plain" image="ic_round-history" title=" 콜 히스토리"/>
+                                <state key="normal" title=" 콜 히스토리" image="ic_round-history"/>
                                 <connections>
                                     <action selector="touchCallHistoryButton:" destination="LTG-AZ-VWe" eventType="touchUpInside" id="xf4-CU-gF5"/>
                                 </connections>
@@ -252,7 +253,7 @@
                                     <constraint firstAttribute="width" constant="74" id="PcX-Gf-fME"/>
                                     <constraint firstAttribute="height" constant="40" id="vwf-97-Chd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -267,7 +268,7 @@
                                 <state key="normal" image="Mask group"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6g-gR-842" userLabel="HistoryView">
-                                <rect key="frame" x="0.0" y="780" width="393" height="591"/>
+                                <rect key="frame" x="0.0" y="852" width="393" height="591"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_round-history" translatesAutoresizingMaskIntoConstraints="NO" id="kGO-Qe-ZTR">
                                         <rect key="frame" x="236" y="18" width="30" height="30"/>
@@ -293,11 +294,11 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023.06.28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-f2-uFm">
-                                        <rect key="frame" x="33" y="79" width="89" height="28"/>
+                                        <rect key="frame" x="33.000000000000007" y="79" width="101.66666666666669" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="y2E-n6-lD3"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -311,18 +312,18 @@
 3번 테이블 - 기타 문제가 있어요. 
 1번 테이블 - 불쾌한 언행을 지속해요. 
 2번 테이블 - 기타 문제가 있어요.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyF-ZX-baB">
-                                                <rect key="frame" x="236.33333333333329" y="12" width="78.666666666666657" height="120"/>
+                                                <rect key="frame" x="231" y="12" width="84" height="120"/>
                                                 <string key="text">06.28 PM 11:49 
 06.28 PM 11:57 
 06.29 AM 02:18 
 06.29 AM 03:04 
 06.29 AM 03:15</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -417,8 +418,8 @@
                                                 <rect key="frame" x="19" y="19" width="295" height="36"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화재 발생" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwm-vj-3M6">
-                                                        <rect key="frame" x="16.000000000000004" y="7" width="52.333333333333343" height="22"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <rect key="frame" x="16" y="7" width="52" height="22"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -451,7 +452,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="혼잡 발생 (입 / 퇴장)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa7-UN-QUf">
                                                         <rect key="frame" x="16" y="7" width="115" height="22"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -483,8 +484,8 @@
                                                 <rect key="frame" x="19" y="109" width="295" height="36"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="클럽 외부 위험 요인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWk-Ry-GrA">
-                                                        <rect key="frame" x="16" y="7" width="109" height="22"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <rect key="frame" x="15.999999999999993" y="7" width="107.33333333333331" height="22"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -533,6 +534,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="76" id="dyS-el-jlP"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title=" 클린 노티스 공지하기" image="tabler_bell-filled2"/>
@@ -569,7 +571,7 @@
                         <viewLayoutGuide key="safeArea" id="LJY-Lu-38C"/>
                         <color key="backgroundColor" red="0.2823529541" green="0.55686277149999996" blue="0.36078432199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Z6g-gR-842" secondAttribute="bottom" constant="-519" id="1Ok-Bx-LyB"/>
+                            <constraint firstAttribute="bottom" secondItem="Z6g-gR-842" secondAttribute="bottom" constant="-591" id="1Ok-Bx-LyB"/>
                             <constraint firstItem="H66-d1-YgR" firstAttribute="top" secondItem="LJY-Lu-38C" secondAttribute="top" constant="88" id="24M-qH-1jz"/>
                             <constraint firstItem="LJY-Lu-38C" firstAttribute="trailing" secondItem="4YQ-iy-X92" secondAttribute="trailing" constant="30" id="51F-vw-1hE"/>
                             <constraint firstAttribute="trailing" secondItem="NRU-Az-pRr" secondAttribute="trailing" id="7Gi-CJ-vAe"/>
@@ -637,8 +639,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L1M4 클럽 4번 테이블 클린콜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v58-SJ-UPZ">
-                                <rect key="frame" x="36" y="75" width="235" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="35.999999999999986" y="75" width="236.66666666666663" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -650,20 +652,20 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="● 콜 내용 보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL4-kM-iG7">
-                                <rect key="frame" x="45" y="133" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="45" y="133" width="90" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfF-Bi-2lq">
-                                <rect key="frame" x="35" y="293" width="323" height="266"/>
+                                <rect key="frame" x="35" y="287" width="323" height="266"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9B-gP-3cd">
                                         <rect key="frame" x="245" y="25" width="55" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카 운 터" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ2-K1-g9j">
                                                 <rect key="frame" x="19" y="18" width="15" height="63"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -680,7 +682,7 @@
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="출 구" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cE-Nk-xcO">
                                         <rect key="frame" x="265" y="167" width="15" height="40.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -734,10 +736,11 @@
                                             <constraint firstAttribute="height" constant="100" id="1rk-a4-brK"/>
                                             <constraint firstAttribute="width" constant="68" id="Fgr-wQ-mYX"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="call">
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="call">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.94509804249999996" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -762,12 +765,12 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Qx-qw-VPe">
-                                <rect key="frame" x="34" y="165" width="325" height="74"/>
+                                <rect key="frame" x="34" y="162" width="325" height="74"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="취한 사람이 난동을 피워요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-aQ-WbG">
                                         <rect key="frame" x="19" y="19" width="287" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -782,7 +785,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlB-Za-8xc">
-                                <rect key="frame" x="66" y="592" width="261" height="60"/>
+                                <rect key="frame" x="66" y="586" width="261" height="60"/>
                                 <color key="backgroundColor" red="0.55686277149999996" green="0.109803915" blue="0.070588238540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="l5M-Wg-h7Z"/>
@@ -795,11 +798,12 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfm-5d-hwc">
-                                <rect key="frame" x="31" y="684" width="331" height="76"/>
+                                <rect key="frame" x="31" y="678" width="331" height="76"/>
                                 <color key="backgroundColor" red="0.13725490870000001" green="0.32156863810000003" blue="0.18039217590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="Gdo-sv-kTU"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title=" 클린콜 완료하기" image="tabler_bell-filled2"/>
@@ -808,8 +812,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="● 콜 위치 보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0g-ms-0wZ">
-                                <rect key="frame" x="45" y="256" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="45" y="253" width="90" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
