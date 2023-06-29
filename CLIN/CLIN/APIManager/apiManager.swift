@@ -16,17 +16,20 @@ class APIManager{
     static func signUp(param: Parameters, completion: @escaping (Result<BlankResponse, Error>) -> Void){
         let endpoint = APIConstant.signUp
         
-        AF.request(endpoint, method: .post, parameters: param, encoding: JSONEncoding.default).responseDecodable(of: BlankResponse.self, completionHandler: {
-            response in
-               switch response.result{
-               case .success(let res):
-                   print("회원 가입 요청 성공")
-                   completion(.success(res))
-               case .failure(_):
-                   print("회원 가입 요청 실패")
-                   //completion(.failure(error))
-               }
-        })
+        AF.request(endpoint,
+                   method: .post,
+                   parameters: param,
+                   encoding: JSONEncoding.default)
+        .response{ response in
+            if let status = response.response?.statusCode {
+                if status == 200{
+                    print("회원가입 요청 성공 (응답코드 \(status))")
+                }else{
+                    print("회원가입 요청 실패")
+                }
+            }
+        }
+        
     }
     
     //로그인 요청
