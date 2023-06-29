@@ -39,10 +39,20 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3P-JF-5rw">
                                                 <rect key="frame" x="21" y="140" width="68" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmV-9Q-0Gl">
+                                                        <rect key="frame" x="21.666666666666671" y="39.666666666666629" width="25" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.78039217000000005" green="0.78039217000000005" blue="0.78039217000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="68" id="7hl-gb-djH"/>
+                                                    <constraint firstItem="dmV-9Q-0Gl" firstAttribute="centerX" secondItem="T3P-JF-5rw" secondAttribute="centerX" id="GBs-o0-Q4M"/>
                                                     <constraint firstAttribute="height" constant="100" id="IkV-xG-gVj"/>
+                                                    <constraint firstItem="dmV-9Q-0Gl" firstAttribute="centerY" secondItem="T3P-JF-5rw" secondAttribute="centerY" id="UaM-cS-hhc"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcT-lL-uPn">
@@ -653,6 +663,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="티켓 구매하러 가기" image="arrowshape.right.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="touchGoTiket" destination="MU7-Ig-1kl" eventType="touchUpInside" id="pkZ-Bx-eY1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f5I-I9-yh5"/>
