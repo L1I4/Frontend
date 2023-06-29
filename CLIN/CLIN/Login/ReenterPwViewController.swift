@@ -6,13 +6,16 @@
 //
 
 import UIKit
+import Alamofire
 
 class ReenterPwViewController: UIViewController {
     
     @IBOutlet var pwCircles: [UIView]!
     
-    var data: String?
-    
+    var phoneNumber: String = "" // 입력 전화번호
+    var password: String = "" // 입력 비밀번호
+    var username: String = "" // 입력 이름
+
     let dummyTextField = UITextField()
         
     override func viewDidLoad() {
@@ -20,6 +23,7 @@ class ReenterPwViewController: UIViewController {
 
         pwCircleInit(pwCircles: pwCircles)
         pwInit()
+        print(phoneNumber)
     }
 
 }
@@ -58,8 +62,18 @@ extension ReenterPwViewController: UITextFieldDelegate{
             /// TODO 비밀번호 비교 및 회원가입 API
             
             // 비밀번호 비교
-            if data! == newText{
+            if password == newText{
                 // 회원가입 API 호출
+                let joinParam: Parameters = [
+                    "phoneNumber": phoneNumber,
+                    "name": username,
+                    "password": password,
+                    "birthDate": "2023-06-29"
+                ]
+                
+                APIManager.signUp(param: joinParam, completion: {_ in
+                    print("signup done")
+                })
                 
             }else{
                 // 재입력

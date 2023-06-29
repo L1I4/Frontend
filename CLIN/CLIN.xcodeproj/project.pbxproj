@@ -13,11 +13,13 @@
 		2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25732A4CECF200B91863 /* JoinViewController.swift */; };
 		2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */; };
 		2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */; };
+		2E7F257F2A4D741F00B91863 /* ViewManager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7F257E2A4D741F00B91863 /* ViewManager.storyboard */; };
+		2E9F85BB2A4DAB780082BC8B /* CertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9F85BA2A4DAB780082BC8B /* CertificateViewController.swift */; };
+		2E9F85C12A4DAFCE0082BC8B /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9F85C02A4DAFCE0082BC8B /* MyPage.storyboard */; };
 		3106F8202A4CDE75008C9ACD /* ClubListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3106F81F2A4CDE75008C9ACD /* ClubListStoryboard.storyboard */; };
 		3106F8232A4CDEB0008C9ACD /* ClubListCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */; };
 		3106F8252A4CDECE008C9ACD /* ClubListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8242A4CDECE008C9ACD /* ClubListTableViewCell.swift */; };
 		3106F8272A4CDEDB008C9ACD /* ClubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8262A4CDEDB008C9ACD /* ClubListViewController.swift */; };
-		3106F82A2A4CDEFF008C9ACD /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */; };
 		3106F82C2A4CDF1E008C9ACD /* TicketStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */; };
 		3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066B2A4C6BE100B63270 /* AppDelegate.swift */; };
 		3120066E2A4C6BE100B63270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120066D2A4C6BE100B63270 /* SceneDelegate.swift */; };
@@ -28,6 +30,9 @@
 		312006832A4C6BE200B63270 /* CLINTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312006822A4C6BE200B63270 /* CLINTests.swift */; };
 		3120068D2A4C6BE200B63270 /* CLINUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120068C2A4C6BE200B63270 /* CLINUITests.swift */; };
 		3120068F2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */; };
+		3155DD9D2A4D7E8D0031665D /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DD9C2A4D7E8D0031665D /* TicketViewController.swift */; };
+		3155DD9F2A4D7E9B0031665D /* TicketCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DD9E2A4D7E9B0031665D /* TicketCellDelegate.swift */; };
+		3155DDA12A4D7EB20031665D /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DDA02A4D7EB20031665D /* TicketTableViewCell.swift */; };
 		3174493F2A4D190600029862 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174493E2A4D190600029862 /* APIConstant.swift */; };
 		317449412A4D20BE00029862 /* apiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449402A4D20BE00029862 /* apiManager.swift */; };
 		317449432A4D21C600029862 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449422A4D21C500029862 /* DataResponse.swift */; };
@@ -82,11 +87,13 @@
 		2E7F25732A4CECF200B91863 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		2E7F25772A4D38CF00B91863 /* EnterPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPwViewController.swift; sourceTree = "<group>"; };
 		2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReenterPwViewController.swift; sourceTree = "<group>"; };
+		2E7F257E2A4D741F00B91863 /* ViewManager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewManager.storyboard; sourceTree = "<group>"; };
+		2E9F85BA2A4DAB780082BC8B /* CertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateViewController.swift; sourceTree = "<group>"; };
+		2E9F85C02A4DAFCE0082BC8B /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		3106F81F2A4CDE75008C9ACD /* ClubListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClubListStoryboard.storyboard; sourceTree = "<group>"; };
 		3106F8222A4CDEB0008C9ACD /* ClubListCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListCellDelegate.swift; sourceTree = "<group>"; };
 		3106F8242A4CDECE008C9ACD /* ClubListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListTableViewCell.swift; sourceTree = "<group>"; };
 		3106F8262A4CDEDB008C9ACD /* ClubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListViewController.swift; sourceTree = "<group>"; };
-		3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TicketStoryboard.storyboard; sourceTree = "<group>"; };
 		312006682A4C6BE100B63270 /* CLIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120066B2A4C6BE100B63270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +108,9 @@
 		312006882A4C6BE200B63270 /* CLINUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLINUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120068C2A4C6BE200B63270 /* CLINUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLINUITests.swift; sourceTree = "<group>"; };
 		3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLINUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3155DD9C2A4D7E8D0031665D /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		3155DD9E2A4D7E9B0031665D /* TicketCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCellDelegate.swift; sourceTree = "<group>"; };
+		3155DDA02A4D7EB20031665D /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		3174493E2A4D190600029862 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		317449402A4D20BE00029862 /* apiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiManager.swift; sourceTree = "<group>"; };
 		317449422A4D21C500029862 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
@@ -169,6 +179,7 @@
 				312006712A4C6BE100B63270 /* Main.storyboard */,
 				2E7F256D2A4C921F00B91863 /* Join.storyboard */,
 				2E7F25732A4CECF200B91863 /* JoinViewController.swift */,
+				2E9F85BA2A4DAB780082BC8B /* CertificateViewController.swift */,
 				3120066F2A4C6BE100B63270 /* ViewController.swift */,
 				2E7F25712A4CC61900B91863 /* PwViewController.swift */,
 				2E7F256F2A4CAC0A00B91863 /* ExtensionTextField.swift */,
@@ -176,6 +187,22 @@
 				2E7F25792A4D3B0E00B91863 /* ReenterPwViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		2E7F257D2A4D73C200B91863 /* ViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				2E7F257E2A4D741F00B91863 /* ViewManager.storyboard */,
+			);
+			path = ViewManager;
+			sourceTree = "<group>";
+		};
+		2E9F85BF2A4DAFA10082BC8B /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				2E9F85C02A4DAFCE0082BC8B /* MyPage.storyboard */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		3106F81E2A4CDDE9008C9ACD /* ClubList */ = {
@@ -192,8 +219,10 @@
 		3106F8282A4CDEE5008C9ACD /* Ticket */ = {
 			isa = PBXGroup;
 			children = (
-				3106F8292A4CDEFF008C9ACD /* TicketViewController.swift */,
 				3106F82B2A4CDF1E008C9ACD /* TicketStoryboard.storyboard */,
+				3155DD9C2A4D7E8D0031665D /* TicketViewController.swift */,
+				3155DDA02A4D7EB20031665D /* TicketTableViewCell.swift */,
+				3155DD9E2A4D7E9B0031665D /* TicketCellDelegate.swift */,
 			);
 			path = Ticket;
 			sourceTree = "<group>";
@@ -224,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				DD9D0BC62A4D715F000FE6CC /* adminPage */,
+				2E9F85BF2A4DAFA10082BC8B /* MyPage */,
+				2E7F257D2A4D73C200B91863 /* ViewManager */,
 				DD450FFE2A4D4DA3000FEE95 /* AlertPage */,
 				2E7F257C2A4D4BD200B91863 /* Login */,
 				3174493D2A4D18EF00029862 /* APIManager */,
@@ -449,10 +480,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD450FF62A4C7DEE000FEE95 /* MainPage.storyboard in Resources */,
+				2E9F85C12A4DAFCE0082BC8B /* MyPage.storyboard in Resources */,
 				DD4510022A4D4EB8000FEE95 /* CustomAlert.storyboard in Resources */,
 				3106F82C2A4CDF1E008C9ACD /* TicketStoryboard.storyboard in Resources */,
 				312006782A4C6BE200B63270 /* LaunchScreen.storyboard in Resources */,
 				DD9D0BCA2A4D71FD000FE6CC /* adminMain.storyboard in Resources */,
+				2E7F257F2A4D741F00B91863 /* ViewManager.storyboard in Resources */,
 				312006752A4C6BE200B63270 /* Assets.xcassets in Resources */,
 				2E7F256E2A4C921F00B91863 /* Join.storyboard in Resources */,
 				3106F8202A4CDE75008C9ACD /* ClubListStoryboard.storyboard in Resources */,
@@ -588,6 +621,8 @@
 				2E7F25722A4CC61900B91863 /* PwViewController.swift in Sources */,
 				2E7F25782A4D38CF00B91863 /* EnterPwViewController.swift in Sources */,
 				317449412A4D20BE00029862 /* apiManager.swift in Sources */,
+				2E9F85BB2A4DAB780082BC8B /* CertificateViewController.swift in Sources */,
+				3155DD9D2A4D7E8D0031665D /* TicketViewController.swift in Sources */,
 				3106F8272A4CDEDB008C9ACD /* ClubListViewController.swift in Sources */,
 				DD9D0BD22A4DB6F6000FE6CC /* CustomAlertNoticeViewController.swift in Sources */,
 				3174494C2A4D46E700029862 /* TicketResponse.swift in Sources */,
@@ -598,6 +633,7 @@
 				2E7F257A2A4D3B0E00B91863 /* ReenterPwViewController.swift in Sources */,
 				2E7F25702A4CAC0A00B91863 /* ExtensionTextField.swift in Sources */,
 				3120066C2A4C6BE100B63270 /* AppDelegate.swift in Sources */,
+				3155DD9F2A4D7E9B0031665D /* TicketCellDelegate.swift in Sources */,
 				DD4510002A4D4DF3000FEE95 /* CustomAlertViewController.swift in Sources */,
 				317449542A4D497A00029862 /* TableStatusInfoResponse.swift in Sources */,
 				2E7F25742A4CECF200B91863 /* JoinViewController.swift in Sources */,
@@ -613,6 +649,7 @@
 				DD9D0BCE2A4D9EDF000FE6CC /* CustomAlertSuccessViewController.swift in Sources */,
 				3174493F2A4D190600029862 /* APIConstant.swift in Sources */,
 				317449502A4D483C00029862 /* ClubInfoResponse.swift in Sources */,
+				3155DDA12A4D7EB20031665D /* TicketTableViewCell.swift in Sources */,
 				317449432A4D21C600029862 /* DataResponse.swift in Sources */,
 				3174494A2A4D42A000029862 /* ReadReportResponse.swift in Sources */,
 				3106F82A2A4CDEFF008C9ACD /* TicketViewController.swift in Sources */,
@@ -799,6 +836,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -831,6 +869,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

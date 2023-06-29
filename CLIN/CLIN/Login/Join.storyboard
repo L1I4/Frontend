@@ -72,48 +72,60 @@
             </objects>
             <point key="canvasLocation" x="-274.04580152671753" y="6.3380281690140849"/>
         </scene>
-        <!--Join View Controller-->
+        <!--Certificate View Controller-->
         <scene sceneID="8J5-N1-Uzi">
             <objects>
-                <viewController storyboardIdentifier="Certification" id="iKR-A0-ROg" customClass="JoinViewController" customModule="CLIN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Certification" id="iKR-A0-ROg" customClass="CertificateViewController" customModule="CLIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0WZ-U3-6RU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인인증 모의 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHx-HS-GaR">
-                                <rect key="frame" x="133" y="416" width="127" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmD-VF-GHK">
-                                <rect key="frame" x="168" y="493" width="57" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="1LK-yR-hxD"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDZ-89-Eqk">
+                                <rect key="frame" x="102" y="456" width="275" height="21"/>
+                                <color key="backgroundColor" red="0.98039215800000001" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="전화번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W55-XW-UI6">
+                                <rect key="frame" x="102" y="509" width="275" height="21"/>
+                                <color key="backgroundColor" red="0.98039215800000001" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="certification" translatesAutoresizingMaskIntoConstraints="NO" id="b0c-av-FUq">
+                                <rect key="frame" x="0.0" y="147" width="393" height="558"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmD-VF-GHK">
+                                <rect key="frame" x="113" y="633" width="264" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="next"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" "/>
                                 <connections>
-                                    <action selector="enterPwBtnTap:" destination="iKR-A0-ROg" eventType="touchUpInside" id="V5E-g9-Uy1"/>
+                                    <action selector="enterPwBtnTap:" destination="iKR-A0-ROg" eventType="touchUpInside" id="9fu-pu-9aY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9q4-Fw-fiI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="FHx-HS-GaR" secondAttribute="trailing" constant="133" id="0q9-ah-DdF"/>
-                            <constraint firstItem="FHx-HS-GaR" firstAttribute="top" secondItem="9q4-Fw-fiI" secondAttribute="top" constant="357" id="ea4-yl-tqe"/>
-                            <constraint firstItem="FHx-HS-GaR" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="133" id="nz5-2v-2Sa"/>
-                            <constraint firstItem="mmD-VF-GHK" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="168" id="oXe-Hb-0uH"/>
-                            <constraint firstItem="mmD-VF-GHK" firstAttribute="top" secondItem="FHx-HS-GaR" secondAttribute="bottom" constant="56" id="sEd-Gx-n8E"/>
-                            <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="mmD-VF-GHK" secondAttribute="trailing" constant="168" id="yuQ-f9-nIq"/>
-                            <constraint firstItem="9q4-Fw-fiI" firstAttribute="bottom" secondItem="FHx-HS-GaR" secondAttribute="bottom" constant="381" id="zMZ-eP-RaJ"/>
+                            <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="W55-XW-UI6" secondAttribute="trailing" constant="16" id="C1b-d7-ETy"/>
+                            <constraint firstItem="kDZ-89-Eqk" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="102" id="DVC-Qu-Q3X"/>
+                            <constraint firstItem="kDZ-89-Eqk" firstAttribute="top" secondItem="9q4-Fw-fiI" secondAttribute="top" constant="397" id="IXG-yX-imJ"/>
+                            <constraint firstItem="W55-XW-UI6" firstAttribute="top" secondItem="kDZ-89-Eqk" secondAttribute="bottom" constant="32" id="Vlx-6q-ne9"/>
+                            <constraint firstItem="9q4-Fw-fiI" firstAttribute="trailing" secondItem="kDZ-89-Eqk" secondAttribute="trailing" constant="16" id="e47-fY-76P"/>
+                            <constraint firstItem="W55-XW-UI6" firstAttribute="leading" secondItem="9q4-Fw-fiI" secondAttribute="leading" constant="102" id="lYy-sN-jA1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="kDZ-89-Eqk" id="GcX-NL-vjP"/>
+                        <outlet property="passCertificationImg" destination="b0c-av-FUq" id="ppk-uS-SG6"/>
+                        <outlet property="phoneNumberTextField" destination="W55-XW-UI6" id="8SN-QY-o2b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgF-el-LZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="6"/>
+            <point key="canvasLocation" x="674.04580152671758" y="5.6338028169014089"/>
         </scene>
         <!--Enter Pw View Controller-->
         <scene sceneID="SPK-GO-gSf">
@@ -366,6 +378,7 @@
     </scenes>
     <resources>
         <image name="ShakeHand" width="393" height="336"/>
+        <image name="certification" width="393" height="558"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
