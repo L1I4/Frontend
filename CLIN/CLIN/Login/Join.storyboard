@@ -41,10 +41,14 @@
                                 <rect key="frame" x="0.0" y="258" width="393" height="336.00000000000006"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB5-UT-LYV">
-                                <rect key="frame" x="43" y="602" width="307" height="44"/>
+                                <rect key="frame" x="43" y="602" width="307" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="tCO-YW-OdJ"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98039215800000001" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="본인인증하기">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                <buttonConfiguration key="configuration" style="plain" title="본인 인증하기">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="35"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="certificationBtnTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qbx-Tb-FHS"/>
@@ -67,6 +71,9 @@
                             <constraint firstItem="kf8-Pr-frh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rDk-WA-wck"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="certificationBtn" destination="zB5-UT-LYV" id="p4z-ez-EyE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -363,6 +370,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="reenteredPwDescription" destination="mPm-cC-jRk" id="7XR-qU-cHC"/>
                         <outletCollection property="pwCircles" destination="Vho-sH-vwb" collectionClass="NSMutableArray" id="Awq-7p-9dy"/>
                         <outletCollection property="pwCircles" destination="I6v-0Y-fqd" collectionClass="NSMutableArray" id="QZK-tQ-3P3"/>
                         <outletCollection property="pwCircles" destination="OuH-Lj-B4j" collectionClass="NSMutableArray" id="x1n-Rk-QSB"/>

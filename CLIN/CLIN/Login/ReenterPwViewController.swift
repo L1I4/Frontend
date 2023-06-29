@@ -12,6 +12,8 @@ class ReenterPwViewController: UIViewController {
     
     @IBOutlet var pwCircles: [UIView]!
     
+    @IBOutlet weak var reenteredPwDescription: UILabel!
+    
     var phoneNumber: String = "" // 입력 전화번호
     var password: String = "" // 입력 비밀번호
     var username: String = "" // 입력 이름
@@ -54,12 +56,11 @@ extension ReenterPwViewController: UITextFieldDelegate{
             let new_idx = newText.count
 
             if old_idx < new_idx{
-                pwCircles[new_idx-1].layer.backgroundColor = UIColor.green.cgColor
+                pwCircles[new_idx-1].layer.backgroundColor = UIColor(red: 72.0/255.0, green: 142.0/255.0, blue: 92.0/255.0, alpha: 1.0).cgColor
             }else if old_idx > new_idx{
                 pwCircles[new_idx].layer.backgroundColor = UIColor.lightGray.cgColor
             }
         }else if newText.count == 6{
-            /// TODO 비밀번호 비교 및 회원가입 API
             
             // 비밀번호 비교
             if password == newText{
@@ -76,10 +77,23 @@ extension ReenterPwViewController: UITextFieldDelegate{
                 })
                 
             }else{
-                // 재입력
+                
+                // 로그인 입력 필드 비우기
+                textField.text = ""
+                
+                // 로그인 입력 뷰 색 변경
+                for c in self.pwCircles{
+                    c.layer.backgroundColor = UIColor.lightGray.cgColor
+                }
+
+                // 색 & 텍스트 변경
+                UIView.animate(withDuration: 1){
+                    self.reenteredPwDescription.text = "비밀번호를 다시 입력해주세요"
+                    self.reenteredPwDescription.textColor = .red
+                }
+                return false
                 
             }
-            // 회원가입 API 호출
             
             // 회원가입 완료 후 back to login
             var initialPresentingViewController = self.presentingViewController

@@ -11,6 +11,7 @@ import Alamofire
 class PwViewController: UIViewController{
     
     @IBOutlet var pwCircles: [UIView]!
+    @IBOutlet weak var pwDescription: UILabel!
     
     var phoneNumber:String = ""
         
@@ -46,17 +47,19 @@ extension PwViewController: UITextFieldDelegate{
         // 변경된 텍스트
         let newText = (oldText as NSString).replacingCharacters(in: range, with: string)
         
+        print(newText)
+        
         if newText.count < 6{
             let old_idx = oldText.count
             let new_idx = newText.count
             
             if old_idx < new_idx{
-                pwCircles[new_idx-1].layer.backgroundColor = UIColor.green.cgColor
+                pwCircles[new_idx-1].layer.backgroundColor =
+                UIColor(red: 72.0/255.0, green: 142.0/255.0, blue: 92.0/255.0, alpha: 1.0).cgColor
             }else if old_idx > new_idx{
                 pwCircles[new_idx].layer.backgroundColor = UIColor.lightGray.cgColor
             }
         }else if newText.count == 6{
-            /// TODO Login API 호출
             
             let loginParam: Parameters = [
                 "phoneNumber": phoneNumber,
@@ -84,10 +87,23 @@ extension PwViewController: UITextFieldDelegate{
                 case .failure(let error):
                     // 로그인 요청 실패
                     print("로그인 실패: \(error)")
+                    
+                    // 로그인 입력 필드 비우기
+                    textField.text = ""
+                    
+                    // 로그인 입력 뷰 색 변경
+                    for c in self.pwCircles{
+                        c.layer.backgroundColor = UIColor.lightGray.cgColor
+                    }
 
+                    // 색 & 텍스트 변경
+                    UIView.animate(withDuration: 1){
+                        self.pwDescription.text = "비밀번호를 다시 입력해주세요"
+                        self.pwDescription.textColor = .red
+                    }
+                    
                 }
             })
-            
             
         }
         
