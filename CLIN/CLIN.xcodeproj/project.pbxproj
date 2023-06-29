@@ -33,7 +33,6 @@
 		3155DD9D2A4D7E8D0031665D /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DD9C2A4D7E8D0031665D /* TicketViewController.swift */; };
 		3155DD9F2A4D7E9B0031665D /* TicketCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DD9E2A4D7E9B0031665D /* TicketCellDelegate.swift */; };
 		3155DDA12A4D7EB20031665D /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DDA02A4D7EB20031665D /* TicketTableViewCell.swift */; };
-		3155DDA72A4DD9BF0031665D /* RequestTImer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DDA62A4DD9BF0031665D /* RequestTImer.swift */; };
 		3155DDA92A4DDDC90031665D /* SafetyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3155DDA82A4DDDC90031665D /* SafetyResponse.swift */; };
 		3174493F2A4D190600029862 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174493E2A4D190600029862 /* APIConstant.swift */; };
 		317449412A4D20BE00029862 /* apiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317449402A4D20BE00029862 /* apiManager.swift */; };
@@ -113,7 +112,6 @@
 		3155DD9C2A4D7E8D0031665D /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		3155DD9E2A4D7E9B0031665D /* TicketCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCellDelegate.swift; sourceTree = "<group>"; };
 		3155DDA02A4D7EB20031665D /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
-		3155DDA62A4DD9BF0031665D /* RequestTImer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTImer.swift; sourceTree = "<group>"; };
 		3155DDA82A4DDDC90031665D /* SafetyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyResponse.swift; sourceTree = "<group>"; };
 		3174493E2A4D190600029862 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		317449402A4D20BE00029862 /* apiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiManager.swift; sourceTree = "<group>"; };
@@ -256,7 +254,6 @@
 		3120066A2A4C6BE100B63270 /* CLIN */ = {
 			isa = PBXGroup;
 			children = (
-				3155DDA52A4DD9720031665D /* Notification */,
 				DD9D0BC62A4D715F000FE6CC /* adminPage */,
 				2E9F85BF2A4DAFA10082BC8B /* MyPage */,
 				2E7F257D2A4D73C200B91863 /* ViewManager */,
@@ -290,14 +287,6 @@
 				3120068E2A4C6BE200B63270 /* CLINUITestsLaunchTests.swift */,
 			);
 			path = CLINUITests;
-			sourceTree = "<group>";
-		};
-		3155DDA52A4DD9720031665D /* Notification */ = {
-			isa = PBXGroup;
-			children = (
-				3155DDA62A4DD9BF0031665D /* RequestTImer.swift */,
-			);
-			path = Notification;
 			sourceTree = "<group>";
 		};
 		3174493D2A4D18EF00029862 /* APIManager */ = {
@@ -660,7 +649,6 @@
 				DD450FF42A4C7DD9000FEE95 /* MainViewController.swift in Sources */,
 				3106F8252A4CDECE008C9ACD /* ClubListTableViewCell.swift in Sources */,
 				317449452A4D393B00029862 /* BlankResponse.swift in Sources */,
-				3155DDA72A4DD9BF0031665D /* RequestTImer.swift in Sources */,
 				3174494E2A4D476600029862 /* ClubListResponse.swift in Sources */,
 				DD9D0BCE2A4D9EDF000FE6CC /* CustomAlertSuccessViewController.swift in Sources */,
 				3174493F2A4D190600029862 /* APIConstant.swift in Sources */,
